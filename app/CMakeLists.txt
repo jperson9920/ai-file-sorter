@@ -261,14 +261,19 @@ if(WIN32)
     add_custom_command(TARGET aifilesorter POST_BUILD
         # COMMAND ${CMAKE_COMMAND} -E remove -f "$<TARGET_FILE_DIR:aifilesorter>/openblas.dll"
         COMMAND ${CMAKE_COMMAND} -E make_directory "$<TARGET_FILE_DIR:aifilesorter>/lib/ggml/wocuda"
-        COMMAND ${CMAKE_COMMAND} -E make_directory "$<TARGET_FILE_DIR:aifilesorter>/lib/ggml/wcuda"
         COMMAND ${CMAKE_COMMAND} -E copy_directory
             "${PRECOMPILED_CPU_ROOT}"
             "$<TARGET_FILE_DIR:aifilesorter>/lib/ggml/wocuda"
-        COMMAND ${CMAKE_COMMAND} -E copy_directory
-            "${PRECOMPILED_CUDA_ROOT}"
-            "$<TARGET_FILE_DIR:aifilesorter>/lib/ggml/wcuda"
     )
+
+    if(EXISTS "${PRECOMPILED_CUDA_ROOT}")
+        add_custom_command(TARGET aifilesorter POST_BUILD
+            COMMAND ${CMAKE_COMMAND} -E make_directory "$<TARGET_FILE_DIR:aifilesorter>/lib/ggml/wcuda"
+            COMMAND ${CMAKE_COMMAND} -E copy_directory
+                "${PRECOMPILED_CUDA_ROOT}"
+                "$<TARGET_FILE_DIR:aifilesorter>/lib/ggml/wcuda"
+        )
+    endif()
 
     # set(_precompiled_libopenblas "${PRECOMPILED_CPU_ROOT}/bin/libopenblas.dll")
     # if(EXISTS "${_precompiled_libopenblas}")

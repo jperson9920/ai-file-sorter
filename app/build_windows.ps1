@@ -133,9 +133,9 @@ if ($Generator -eq "Ninja" -or $Generator -eq "Ninja Multi-Config") {
 
 $configureArgs = @("-S", $appDir, "-B", $buildDir)
 $configureArgs += @("-G", $Generator)
-$configureArgs += "-DCMAKE_TOOLCHAIN_FILE=`"$toolchainFile`""
+$configureArgs += "-DCMAKE_TOOLCHAIN_FILE=$toolchainFile"
 $configureArgs += "-DVCPKG_TARGET_TRIPLET=x64-windows"
-$configureArgs += "-DVCPKG_MANIFEST_DIR=`"$appDir`""
+$configureArgs += "-DVCPKG_MANIFEST_DIR=$appDir"
 
 if ($cmakeVersionMatch.Success) {
     $cmakeMajorMinor = "$cmakeMajor.$cmakeMinor"
