@@ -135,55 +135,134 @@ def main():
 
 def cmd_process(config, args):
     """Process images in inbox."""
+    import asyncio
+    from pathlib import Path
+    from src.workflow import WorkflowOrchestrator
+
     logger.info("Starting image processing workflow...")
 
-    # This will be implemented in STORY-008
-    print("Process command not yet implemented.")
-    print("This will be available after STORY-008: Workflow Orchestration")
+    # Get inbox directory
+    inbox = Path(config['directories']['inbox'])
+    if not inbox.exists():
+        print(f"Error: Inbox directory not found: {inbox}")
+        return 1
+
+    # Find image files
+    image_extensions = ('.jpg', '.jpeg', '.png', '.gif', '.webp', '.bmp')
+    image_files = [f for f in inbox.rglob('*') if f.suffix.lower() in image_extensions]
+
+    if not image_files:
+        print(f"No images found in {inbox}")
+        return 0
+
+    print(f"Found {len(image_files)} images to process")
+
+    # Initialize orchestrator
+    orchestrator = WorkflowOrchestrator(config)
+
+    # Process batch
+    async def run_batch():
+        return await orchestrator.process_batch(
+            image_files,
+            skip_existing=args.skip_existing
+        )
+
+    summary = asyncio.run(run_batch())
+
+    # Print summary
+    print(f"\nProcessing complete:")
+    print(f"  Success: {summary['success']}")
+    print(f"  Skipped: {summary['skipped']}")
+    print(f"  No tags: {summary['no_tags']}")
+    print(f"  Errors: {summary['errors']}")
 
     return 0
 
 
 def cmd_sync(config, args):
     """Sync to NAS."""
+    from pathlib import Path
+    from src.workflow import WorkflowOrchestrator
+
     logger.info("Starting NAS sync...")
 
-    # This will be implemented in STORY-006
-    print("Sync command not yet implemented.")
-    print("This will be available after STORY-006: NAS Sync")
+    orchestrator = WorkflowOrchestrator(config)
+    sorted_dir = Path(config['directories']['sorted'])
 
-    return 0
+    if not sorted_dir.exists():
+        print(f"Error: Sorted directory not found: {sorted_dir}")
+        return 1
+
+    print(f"Syncing {sorted_dir} to NAS...")
+    result = orchestrator.sync_to_nas(sorted_dir, dry_run=False)
+
+    if result.get('success'):
+        print(f"Sync complete: {result['files_copied']} files copied")
+        return 0
+    else:
+        print(f"Sync failed: {result.get('error', 'Unknown error')}")
+        return 1
 
 
 def cmd_stats(config, args):
     """Show preference statistics."""
+    from src.workflow import WorkflowOrchestrator
+    import json
+
     logger.info("Fetching preference statistics...")
 
-    # This will be implemented in STORY-005
-    print("Stats command not yet implemented.")
-    print("This will be available after STORY-005: Preference Learning")
+    orchestrator = WorkflowOrchestrator(config)
+    stats = orchestrator.get_statistics()
+
+    print("\nPreference Learning Statistics:")
+    print(f"  Total movements: {stats['preferences']['total_movements']}")
+    print(f"  Total preferences: {stats['preferences']['total_preferences']}")
+    print(f"  High confidence: {stats['preferences']['high_confidence_preferences']}")
+
+    print("\nBooru Cache Statistics:")
+    print(f"  Total entries: {stats['booru_cache']['total_entries']}")
+    print(f"  Valid entries: {stats['booru_cache']['valid_entries']}")
 
     return 0
 
 
 def cmd_export_preferences(config, args):
     """Export preferences to JSON."""
+    from src.learning import PreferenceDatabase
+    import json
+
     logger.info(f"Exporting preferences to: {args.output}")
 
-    # This will be implemented in STORY-005
-    print("Export preferences command not yet implemented.")
-    print("This will be available after STORY-005: Preference Learning")
+    db_path = config.get('learning', {}).get('database_path', 'data/preferences.db')
+    pref_db = PreferenceDatabase(db_path)
+
+    preferences = pref_db.export_preferences()
+
+    with open(args.output, 'w') as f:
+        json.dump(preferences, f, indent=2)
+
+    print(f"Exported {len(preferences['preferences'])} preferences to {args.output}")
 
     return 0
 
 
 def cmd_reset_preferences(config, args):
     """Reset all preferences."""
+    from src.learning import PreferenceDatabase
+
     logger.warning("Resetting all learned preferences...")
 
-    # This will be implemented in STORY-005
-    print("Reset preferences command not yet implemented.")
-    print("This will be available after STORY-005: Preference Learning")
+    # Confirm with user
+    response = input("Are you sure you want to reset all preferences? (yes/no): ")
+    if response.lower() != 'yes':
+        print("Cancelled.")
+        return 0
+
+    db_path = config.get('learning', {}).get('database_path', 'data/preferences.db')
+    pref_db = PreferenceDatabase(db_path)
+
+    pref_db.clear_all()
+    print("All preferences have been reset.")
 
     return 0
 
