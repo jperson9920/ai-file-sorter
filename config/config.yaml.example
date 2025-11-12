@@ -1,0 +1,84 @@
+# Image Processing Directories
+directories:
+  inbox: "C:\\ImageProcessing\\Inbox"
+  sorted: "C:\\ImageProcessing\\Sorted"
+  working: "C:\\ImageProcessing\\Working"
+  nas_mount: "Z:\\"  # SMB mount point (optional)
+  nas_path: "\\\\192.168.1.100\\photos"  # UNC path or mapped drive
+
+# API Configuration (use environment variables for keys)
+api:
+  saucenao:
+    api_key: "${SAUCENAO_API_KEY}"
+    rate_limit: 6  # requests per 30 seconds
+    min_similarity: 70.0
+  danbooru:
+    username: "${DANBOORU_USER}"
+    api_key: "${DANBOORU_API_KEY}"
+  iqdb:
+    enabled: true
+    min_similarity: 80.0
+
+# Content Analysis Settings
+content_analysis:
+  enabled: true
+  models:
+    clip:
+      model_name: "openai/clip-vit-base-patch32"
+      cache_dir: "data/models"
+    faster_rcnn:
+      model_name: "fasterrcnn_resnet50_fpn"
+      confidence_threshold: 0.7
+
+  classifications:
+    - label: "anime style illustration"
+      threshold: 0.6
+    - label: "realistic photograph"
+      threshold: 0.6
+    - label: "3D render"
+      threshold: 0.5
+
+# XMP Metadata Settings
+xmp:
+  exiftool_path: ""  # Auto-detect if in PATH, or specify: "C:\\Tools\\exiftool.exe"
+  sidecar_format: "{filename}.xmp"  # IMG_001.jpg -> IMG_001.jpg.xmp
+  fields:
+    - "XMP-digiKam:TagsList"
+    - "IPTC:Keywords"
+    - "XMP-dc:Subject"
+  include_rating: true
+  include_description: true
+
+# Preference Learning
+learning:
+  database_path: "data/preferences.db"
+  min_confidence: 0.7
+  min_samples: 50  # Corrections needed before high confidence
+
+# Workflow Settings
+workflow:
+  batch_size: 100  # Images per batch
+  parallel_workers: 4
+  enable_gui_review: false
+  auto_approve_high_confidence: true
+  preserve_originals: false  # Set to true to copy instead of move
+
+# NAS Sync Settings
+sync:
+  enabled: false
+  robocopy_options: "/MIR /XO /R:3 /W:5"
+  schedule: "manual"  # or "auto" for automatic sync after processing
+
+# Logging
+logging:
+  level: "INFO"  # DEBUG, INFO, WARNING, ERROR
+  file: "logs/image_tagger.log"
+  max_bytes: 10485760  # 10MB
+  backup_count: 5
+  console_output: true
+
+# Performance
+performance:
+  cache_enabled: true
+  cache_ttl_hours: 48
+  max_cache_size_mb: 500

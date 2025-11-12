@@ -1,0 +1,26 @@
+# Core dependencies
+pyyaml>=6.0
+pillow>=10.0.0
+requests>=2.31.0
+
+# Booru integration
+saucenao-api>=2.4.0
+pybooru>=4.2.2
+PicImageSearch>=3.0.0
+
+# XMP writing
+pyexiftool>=0.5.6
+
+# ML/AI
+torch>=2.0.0
+torchvision>=0.15.0
+transformers>=4.30.0
+numpy>=1.24.0
+
+# Database
+jsonschema>=4.17.0
+
+# Utilities
+tqdm>=4.65.0
+python-dotenv>=1.0.0
+aiohttp>=3.8.0
