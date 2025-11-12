@@ -1,0 +1,110 @@
+Computing installation plan...
+A suitable version of cmake was not found (required v3.30.1).
+Downloading https://github.com/Kitware/CMake/releases/download/v3.30.1/cmake-3.30.1-windows-i386.zip -> cmake-3.30.1-windows-i386.zip
+Successfully downloaded cmake-3.30.1-windows-i386.zip
+Extracting cmake...
+A suitable version of 7zip was not found (required v25.1.0).
+Downloading https://github.com/ip7z/7zip/releases/download/25.01/7z2501.exe -> 7z2501.7z.exe
+Successfully downloaded 7z2501.7z.exe
+Extracting 7zip...
+A suitable version of 7zr was not found (required v25.1.0).
+Downloading https://github.com/ip7z/7zip/releases/download/25.01/7zr.exe -> 7d84fcad-7zr.exe
+Successfully downloaded 7d84fcad-7zr.exe
+The following packages will be built and installed:
+    curl[core,non-http,ssl,sspi]:x64-windows@8.17.0
+  * vcpkg-cmake:x64-windows@2024-04-23
+  * vcpkg-cmake-config:x64-windows@2024-05-23
+  * zlib:x64-windows@1.3.1
+Additional packages (*) will be modified to complete this operation.
+Detecting compiler hash for triplet x64-windows...
+Compiler found: C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.44.35207/bin/Hostx64/x64/cl.exe
+Restored 0 package(s) from C:\Users\soacarylithiar\AppData\Local\vcpkg\archives in 50.4 us. Use --debug to see more details.
+Installing 1/4 vcpkg-cmake:x64-windows@2024-04-23...
+Building vcpkg-cmake:x64-windows@2024-04-23...
+-- Installing: C:/dev/vcpkg/packages/vcpkg-cmake_x64-windows/share/vcpkg-cmake/vcpkg_cmake_configure.cmake
+-- Installing: C:/dev/vcpkg/packages/vcpkg-cmake_x64-windows/share/vcpkg-cmake/vcpkg_cmake_build.cmake
+-- Installing: C:/dev/vcpkg/packages/vcpkg-cmake_x64-windows/share/vcpkg-cmake/vcpkg_cmake_install.cmake
+-- Installing: C:/dev/vcpkg/packages/vcpkg-cmake_x64-windows/share/vcpkg-cmake/vcpkg-port-config.cmake
+-- Installing: C:/dev/vcpkg/packages/vcpkg-cmake_x64-windows/share/vcpkg-cmake/copyright
+-- Performing post-build validation
+Starting submission of vcpkg-cmake:x64-windows@2024-04-23 to 1 binary cache(s) in the background
+Elapsed time to handle vcpkg-cmake:x64-windows: 105 ms
+vcpkg-cmake:x64-windows package ABI: 688cba08c1da518d7276a1d76946f226661601abe3241a1875a8ada17d0fc877
+Installing 2/4 vcpkg-cmake-config:x64-windows@2024-05-23...
+Building vcpkg-cmake-config:x64-windows@2024-05-23...
+-- Installing: C:/dev/vcpkg/packages/vcpkg-cmake-config_x64-windows/share/vcpkg-cmake-config/vcpkg_cmake_config_fixup.cmake
+-- Installing: C:/dev/vcpkg/packages/vcpkg-cmake-config_x64-windows/share/vcpkg-cmake-config/vcpkg-port-config.cmake
+-- Installing: C:/dev/vcpkg/packages/vcpkg-cmake-config_x64-windows/share/vcpkg-cmake-config/copyright
+-- Skipping post-build validation due to VCPKG_POLICY_EMPTY_PACKAGE
+Starting submission of vcpkg-cmake-config:x64-windows@2024-05-23 to 1 binary cache(s) in the background
+Elapsed time to handle vcpkg-cmake-config:x64-windows: 188 ms
+vcpkg-cmake-config:x64-windows package ABI: 8038565d62f5eb6f60febf4e0f7128bddd5814f0dc1ccc189eb91023ede76f49
+Completed submission of vcpkg-cmake:x64-windows@2024-04-23 to 1 binary cache(s) in 153 ms
+Installing 3/4 zlib:x64-windows@1.3.1...
+Building zlib:x64-windows@1.3.1...
+Downloading https://github.com/madler/zlib/archive/v1.3.1.tar.gz -> madler-zlib-v1.3.1.tar.gz
+Successfully downloaded madler-zlib-v1.3.1.tar.gz
+-- Extracting source C:/dev/vcpkg/downloads/madler-zlib-v1.3.1.tar.gz
+-- Applying patch 0001-Prevent-invalid-inclusions-when-HAVE_-is-set-to-0.patch
+-- Applying patch 0002-build-static-or-shared-not-both.patch
+-- Applying patch 0003-android-and-mingw-fixes.patch
+-- Using source at C:/dev/vcpkg/buildtrees/zlib/src/v1.3.1-2e5db616bf.clean
+-- Configuring x64-windows
+-- Building x64-windows-dbg
+-- Building x64-windows-rel
+-- Installing: C:/dev/vcpkg/packages/zlib_x64-windows/share/zlib/vcpkg-cmake-wrapper.cmake
+-- Fixing pkgconfig file: C:/dev/vcpkg/packages/zlib_x64-windows/lib/pkgconfig/zlib.pc
+Downloading msys2-mingw-w64-x86_64-pkgconf-1~2.4.3-1-any.pkg.tar.zst, trying https://mirror.msys2.org/mingw/mingw64/mingw-w64-x86_64-pkgconf-1~2.4.3-1-any.pkg.tar.zst
+Successfully downloaded msys2-mingw-w64-x86_64-pkgconf-1~2.4.3-1-any.pkg.tar.zst
+Downloading msys2-msys2-runtime-3.6.2-2-x86_64.pkg.tar.zst, trying https://mirror.msys2.org/msys/x86_64/msys2-runtime-3.6.2-2-x86_64.pkg.tar.zst
+Successfully downloaded msys2-msys2-runtime-3.6.2-2-x86_64.pkg.tar.zst
+-- Using msys root at C:/dev/vcpkg/downloads/tools/msys2/9272adbcaf19caef
+-- Fixing pkgconfig file: C:/dev/vcpkg/packages/zlib_x64-windows/debug/lib/pkgconfig/zlib.pc
+-- Installing: C:/dev/vcpkg/packages/zlib_x64-windows/share/zlib/copyright
+-- Performing post-build validation
+Starting submission of zlib:x64-windows@1.3.1 to 1 binary cache(s) in the background
+Elapsed time to handle zlib:x64-windows: 8.1 s
+zlib:x64-windows package ABI: cc09e20a24c6ddf1a99630bef20fcd3011c489322f6b951a70318864a219381f
+Completed submission of vcpkg-cmake-config:x64-windows@2024-05-23 to 1 binary cache(s) in 36.1 ms
+Installing 4/4 curl[core,non-http,ssl,sspi]:x64-windows@8.17.0...
+Building curl[core,non-http,ssl,sspi]:x64-windows@8.17.0...
+Downloading https://github.com/curl/curl/archive/curl-8_17_0.tar.gz -> curl-curl-curl-8_17_0.tar.gz
+Successfully downloaded curl-curl-curl-8_17_0.tar.gz
+-- Extracting source C:/dev/vcpkg/downloads/curl-curl-curl-8_17_0.tar.gz
+-- Applying patch dependencies.patch
+-- Applying patch pkgconfig-curl-config.patch
+-- Using source at C:/dev/vcpkg/buildtrees/curl/src/url-8_17_0-def923c407.clean
+-- Using cached msys2-mingw-w64-x86_64-pkgconf-1~2.4.3-1-any.pkg.tar.zst
+-- Using cached msys2-msys2-runtime-3.6.2-2-x86_64.pkg.tar.zst
+-- Using msys root at C:/dev/vcpkg/downloads/tools/msys2/9272adbcaf19caef
+-- Configuring x64-windows
+-- Building x64-windows-dbg
+-- Building x64-windows-rel
+-- Fixing pkgconfig file: C:/dev/vcpkg/packages/curl_x64-windows/lib/pkgconfig/libcurl.pc
+-- Fixing pkgconfig file: C:/dev/vcpkg/packages/curl_x64-windows/debug/lib/pkgconfig/libcurl.pc
+-- Installing: C:/dev/vcpkg/packages/curl_x64-windows/share/curl/vcpkg-cmake-wrapper.cmake
+-- Installing: C:/dev/vcpkg/packages/curl_x64-windows/share/curl/usage
+-- Performing post-build validation
+Starting submission of curl[core,non-http,ssl,sspi]:x64-windows@8.17.0 to 1 binary cache(s) in the background
+Elapsed time to handle curl:x64-windows: 19 s
+curl:x64-windows package ABI: e5e0a3543918f10ac975c36d628abc0202cfff375c30eb7cd6128305a4e9734d
+Total install time: 28 s
+Installed contents are licensed to you by owners. Microsoft is not responsible for, nor does it grant any licenses to, third-party packages.
+Packages installed in this vcpkg installation declare the following licenses:
+BSD-3-Clause
+ISC
+MIT
+Zlib
+curl
+curl is compatible with built-in CMake targets:
+
+    find_package(CURL REQUIRED)
+    target_link_libraries(main PRIVATE CURL::libcurl)
+
+Completed submission of zlib:x64-windows@1.3.1 to 1 binary cache(s) in 93.8 ms
+Waiting for 1 remaining binary cache submissions...
+Completed submission of curl[core,non-http,ssl,sspi]:x64-windows@8.17.0 to 1 binary cache(s) in 374 ms (1/1)
+All requested installations completed successfully in: 28 s
+CMake Error: The source directory "D:/VSCode Projects/ai-file-sorter/app/include/external/llama.cpp" does not appear to contain CMakeLists.txt.
+Specify --help for usage, or press the help button on the CMake GUI.
+Error: could not load cache

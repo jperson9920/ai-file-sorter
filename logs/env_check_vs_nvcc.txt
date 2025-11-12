@@ -1,0 +1,56 @@
+﻿=== Timestamp: 2025-11-07T22:49:21.7322395-08:00
+=== Get-Command cl.exe
+
+CommandType     Name                                               Version    Source                    
+-----------     ----                                               -------    ------                    
+Application     cl.exe                                             14.44.3... C:\Program Files\Micros...
+
+
+
+=== where cl.exe
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\bin\Hostx64\x64\cl.exe
+
+=== vswhere
+
+=== nvcc
+nvcc not found
+=== CUDA install dirs
+CUDA folder not found at C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA
+=== vcpkg checks (common locations)
+Checking C:\dev\vcpkg
+
+FullName                        
+--------                        
+C:\dev\vcpkg\.git               
+C:\dev\vcpkg\.github            
+C:\dev\vcpkg\docs               
+C:\dev\vcpkg\ports              
+C:\dev\vcpkg\scripts            
+C:\dev\vcpkg\toolsrc            
+C:\dev\vcpkg\triplets           
+C:\dev\vcpkg\versions           
+C:\dev\vcpkg\.gitattributes     
+C:\dev\vcpkg\.gitignore         
+C:\dev\vcpkg\.vcpkg-root        
+C:\dev\vcpkg\bootstrap-vcpkg.bat
+C:\dev\vcpkg\bootstrap-vcpkg.sh 
+C:\dev\vcpkg\CodeQL.yml         
+C:\dev\vcpkg\CONTRIBUTING.md    
+C:\dev\vcpkg\CONTRIBUTING_pt.md 
+C:\dev\vcpkg\CONTRIBUTING_zh.md 
+C:\dev\vcpkg\LICENSE.txt        
+C:\dev\vcpkg\NOTICE.txt         
+C:\dev\vcpkg\NOTICE_pt.txt      
+C:\dev\vcpkg\README.md          
+C:\dev\vcpkg\SECURITY.md        
+C:\dev\vcpkg\shell.nix          
+C:\dev\vcpkg\vcpkg.exe          
+
+
+
+Checking D:\tools\vcpkg
+Not found: D:\tools\vcpkg
+Checking D:\VSCode Projects\ai-file-sorter\vcpkg
+Not found: D:\VSCode Projects\ai-file-sorter\vcpkg
+=== End of checks
+usage: cl [ option... ] filename... [ /link linkoption... ]

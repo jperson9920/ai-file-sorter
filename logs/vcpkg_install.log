@@ -1,0 +1,108 @@
+﻿=== Timestamp: 2025-11-07T21:12:41.2605077-08:00
+=== git --version
+git version 2.51.2.windows.1
+
+--- Trying path: C:\dev\vcpkg
+Cloning into C:\dev\vcpkg
+git : Cloning into 'C:\dev\vcpkg'...
+At D:\VSCode Projects\ai-file-sorter\app\scripts\install_vcpkg.ps1:24 char:5
++     git clone --depth 1 https://github.com/microsoft/vcpkg.git "$p" 2 ...
++     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (Cloning into 'C:\dev\vcpkg'...:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+Updating files:  34% (4472/13079)
+Updating files:  35% (4578/13079)
+Updating files:  36% (4709/13079)
+Updating files:  37% (4840/13079)
+Updating files:  38% (4971/13079)
+Updating files:  39% (5101/13079)
+Updating files:  40% (5232/13079)
+Updating files:  41% (5363/13079)
+Updating files:  42% (5494/13079)
+Updating files:  43% (5624/13079)
+Updating files:  44% (5755/13079)
+Updating files:  45% (5886/13079)
+Updating files:  46% (6017/13079)
+Updating files:  47% (6148/13079)
+Updating files:  48% (6278/13079)
+Updating files:  49% (6409/13079)
+Updating files:  50% (6540/13079)
+Updating files:  51% (6671/13079)
+Updating files:  52% (6802/13079)
+Updating files:  53% (6932/13079)
+Updating files:  54% (7063/13079)
+Updating files:  55% (7194/13079)
+Updating files:  56% (7325/13079)
+Updating files:  57% (7456/13079)
+Updating files:  58% (7586/13079)
+Updating files:  59% (7717/13079)
+Updating files:  60% (7848/13079)
+Updating files:  61% (7979/13079)
+Updating files:  62% (8109/13079)
+Updating files:  63% (8240/13079)
+Updating files:  64% (8371/13079)
+Updating files:  65% (8502/13079)
+Updating files:  66% (8633/13079)
+Updating files:  67% (8763/13079)
+Updating files:  68% (8894/13079)
+Updating files:  69% (9025/13079)
+Updating files:  69% (9028/13079)
+Updating files:  70% (9156/13079)
+Updating files:  71% (9287/13079)
+Updating files:  72% (9417/13079)
+Updating files:  73% (9548/13079)
+Updating files:  74% (9679/13079)
+Updating files:  75% (9810/13079)
+Updating files:  76% (9941/13079)
+Updating files:  77% (10071/13079)
+Updating files:  78% (10202/13079)
+Updating files:  79% (10333/13079)
+Updating files:  80% (10464/13079)
+Updating files:  81% (10594/13079)
+Updating files:  82% (10725/13079)
+Updating files:  83% (10856/13079)
+Updating files:  84% (10987/13079)
+Updating files:  85% (11118/13079)
+Updating files:  86% (11248/13079)
+Updating files:  87% (11379/13079)
+Updating files:  88% (11510/13079)
+Updating files:  89% (11641/13079)
+Updating files:  90% (11772/13079)
+Updating files:  91% (11902/13079)
+Updating files:  92% (12033/13079)
+Updating files:  93% (12164/13079)
+Updating files:  94% (12295/13079)
+Updating files:  95% (12426/13079)
+Updating files:  96% (12556/13079)
+Updating files:  97% (12687/13079)
+Updating files:  98% (12818/13079)
+Updating files:  99% (12949/13079)
+Updating files: 100% (13079/13079)
+Updating files: 100% (13079/13079), done.
+
+Cloned to C:\dev\vcpkg
+Bootstrapping vcpkg at C:\dev\vcpkg
+Running bootstrap: C:\dev\vcpkg\bootstrap-vcpkg.bat
+Downloading https://github.com/microsoft/vcpkg-tool/releases/download/2025-10-16/vcpkg.exe -> C:\dev\vcpkg\vcpkg.exe... done.
+Validating signature... done.
+
+vcpkg package management program version 2025-10-16-71538f2694db93da4668782d094768ba74c45991
+
+See LICENSE.txt for license information.
+Telemetry
+---------
+vcpkg collects usage data in order to help us improve your experience.
+The data collected by Microsoft is anonymous.
+You can opt-out of telemetry by re-running the bootstrap-vcpkg script with -disableMetrics,
+passing --disable-metrics to vcpkg on the command line,
+or by setting the VCPKG_DISABLE_METRICS environment variable.
+
+Read more about vcpkg telemetry at docs/about/privacy.md
+
+vcpkg.exe found at C:\dev\vcpkg\vcpkg.exe
+vcpkg package management program version 2025-10-16-71538f2694db93da4668782d094768ba74c45991
+
+See LICENSE.txt for license information.
+
+VCPKG_ROOT=C:\dev\vcpkg

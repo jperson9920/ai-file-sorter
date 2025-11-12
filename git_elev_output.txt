@@ -1,0 +1,23 @@
+﻿ M app/CMakeLists.txt
+ M app/build_windows.ps1
+?? app/scripts/env_check.ps1
+?? app/scripts/install_vcpkg.ps1
+?? app/scripts/run_dev_env_check.ps1
+?? app/scripts/run_vs_installer.ps1
+?? app/scripts/vs_download_check.ps1
+?? cmake.bat
+?? git_elev_output.txt
+?? git_op_output.txt
+?? logs/
+?? run_build_vsdevcmd.cmd
+?? tmp_build_cmd.cmd
+---BRANCH---
+main
+---HASH---
+5267de4182fb21da7e5ec0261796fc07f310b3e4
+---REMOTES---
+origin	https://github.com/jperson9920/ai-file-sorter.git (fetch)
+origin	https://github.com/jperson9920/ai-file-sorter.git (push)
+upstream	https://github.com/hyperfield/ai-file-sorter.git (fetch)
+upstream	https://github.com/hyperfield/ai-file-sorter.git (push)
+---END---

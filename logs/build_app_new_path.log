@@ -1,0 +1,1279 @@
+Configuring project (generator: Visual Studio 17 2022, configuration: Release)...
+
+==== CMake Configure Command ====
+cmake -S D:\VSProj\ai-file-sorter\app -B D:\VSProj\ai-file-sorter\app\build-windows -G Visual Studio 17 2022 -DCMAKE_TOOLCHAIN_FILE="C:\dev\vcpkg\scripts\buildsystems\vcpkg.cmake" -DVCPKG_TARGET_TRIPLET=x64-windows -DVCPKG_MANIFEST_DIR="D:\VSProj\ai-file-sorter\app" -A x64
+=================================
+
+-- Running vcpkg install
+Detecting compiler hash for triplet x64-windows...
+Compiler found: C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.44.35207/bin/Hostx64/x64/cl.exe
+The following packages will be built and installed:
+  * brotli:x64-windows@1.1.0#1
+  * bzip2[core,tool]:x64-windows@1.0.8#6
+    curl[core,non-http,ssl,sspi]:x64-windows@8.16.0
+  * dbus:x64-windows@1.16.2#2
+  * double-conversion:x64-windows@3.3.1
+  * egl-registry:x64-windows@2024-01-25
+  * expat:x64-windows@2.7.3
+    fmt:x64-windows@12.0.0
+  * freetype[brotli,bzip2,core,png,zlib]:x64-windows@2.13.3
+    gettext:x64-windows@0.22.5#3
+  * gettext-libintl:x64-windows@0.22.5#4
+  * harfbuzz[core,freetype]:x64-windows@11.3.3
+  * icu[core,tools]:x64-windows@74.2#6
+    jsoncpp:x64-windows@1.9.6
+  * libiconv:x64-windows@1.18#2
+  * libjpeg-turbo:x64-windows@3.1.2
+  * libpng:x64-windows@1.6.50
+  * libpq[core,lz4,openssl,zlib]:x64-windows@16.9#1
+  * lz4:x64-windows@1.10.0
+  * opengl:x64-windows@2022-12-04#3
+  * opengl-registry:x64-windows@2024-02-10#1
+    openssl:x64-windows@3.6.0#2
+  * pcre2[core,jit,platform-default-features]:x64-windows@10.47
+  * pkgconf:x64-windows@2.5.1#3
+    qtbase[brotli,concurrent,core,dbus,dnslookup,doubleconversion,freetype,gui,harfbuzz,icu,jpeg,network,opengl,openssl,pcre2,png,sql,sql-psql,sql-sqlite,testlib,thread,widgets,zstd]:x64-windows@6.9.1#1
+    spdlog:x64-windows@1.16.0
+    sqlite3[core,json1]:x64-windows@3.50.4
+  * vcpkg-cmake:x64-windows@2025-08-07
+  * vcpkg-cmake-config:x64-windows@2024-05-23
+  * vcpkg-cmake-get-vars:x64-windows@2025-05-29
+  * vcpkg-make:x64-windows@2025-09-29
+  * vcpkg-pkgconfig-get-modules:x64-windows@2024-04-03
+  * vcpkg-tool-meson:x64-windows@1.9.0#3
+  * zlib:x64-windows@1.3.1
+  * zstd:x64-windows@1.5.7
+Additional packages (*) will be modified to complete this operation.
+Restored 7 package(s) from C:\Users\soacarylithiar\AppData\Local\vcpkg\archives in 169 ms. Use --debug to see more details.
+Installing 1/35 vcpkg-cmake:x64-windows@2025-08-07...
+Elapsed time to handle vcpkg-cmake:x64-windows: 5.04 ms
+vcpkg-cmake:x64-windows package ABI: 7ea28400f66caa48516078ef536fb911876db904679e0ff31665e66be1fbd249
+Installing 2/35 zlib:x64-windows@1.3.1...
+Elapsed time to handle zlib:x64-windows: 12.6 ms
+zlib:x64-windows package ABI: 9f20fba2820b08e4bdb1a45764f50b0cbebee47b0e8f9ef888b926cdffea5ac7
+Installing 3/35 vcpkg-cmake-config:x64-windows@2024-05-23...
+Elapsed time to handle vcpkg-cmake-config:x64-windows: 6.29 ms
+vcpkg-cmake-config:x64-windows package ABI: 8038565d62f5eb6f60febf4e0f7128bddd5814f0dc1ccc189eb91023ede76f49
+Installing 4/35 curl[core,non-http,ssl,sspi]:x64-windows@8.16.0...
+Elapsed time to handle curl:x64-windows: 38.5 ms
+curl:x64-windows package ABI: 310cd9d76d441256736576a30f688e4c707d7401d4b72e33d8640a8602516247
+Installing 5/35 fmt:x64-windows@12.0.0...
+Elapsed time to handle fmt:x64-windows: 34.5 ms
+fmt:x64-windows package ABI: 61096bd59eca031513228e62e6810d5042d7ee3c3fa67a484f7b36881f7f8ad1
+Installing 6/35 vcpkg-cmake-get-vars:x64-windows@2025-05-29...
+Elapsed time to handle vcpkg-cmake-get-vars:x64-windows: 8.49 ms
+vcpkg-cmake-get-vars:x64-windows package ABI: e5307f928202bd7eea10c2c717f45465bd7d691a10c1804e7e06294608a555ab
+Installing 7/35 vcpkg-make:x64-windows@2025-09-29...
+Elapsed time to handle vcpkg-make:x64-windows: 11 ms
+vcpkg-make:x64-windows package ABI: 85d895a6b06e478f3e557f97b3a9e759422d8cff2c83f1b3aaa2eadc866adaf6
+Installing 8/35 libiconv:x64-windows@1.18#2...
+Building libiconv:x64-windows@1.18#2...
+-- Using cached libiconv-1.18.tar.gz
+-- Cleaning sources at C:/dev/vcpkg/buildtrees/libiconv/src/v1.18-8006e03beb.clean. Use --editable to skip cleaning for the packages you specify.
+-- Extracting source C:/dev/vcpkg/downloads/libiconv-1.18.tar.gz
+-- Applying patch 0002-Config-for-MSVC.patch
+-- Applying patch 0003-Add-export.patch
+-- Applying patch 0004-ModuleFileName.patch
+-- Using source at C:/dev/vcpkg/buildtrees/libiconv/src/v1.18-8006e03beb.clean
+-- Getting CMake variables for x64-windows
+-- Using cached msys2-autoconf-wrapper-20240607-1-any.pkg.tar.zst
+-- Using cached msys2-automake-wrapper-20240607-1-any.pkg.tar.zst
+-- Using cached msys2-binutils-2.44-1-x86_64.pkg.tar.zst
+-- Using cached msys2-libtool-2.5.4-1-x86_64.pkg.tar.zst
+-- Using cached msys2-make-4.4.1-2-x86_64.pkg.tar.zst
+-- Using cached msys2-pkgconf-2.4.3-1-x86_64.pkg.tar.zst
+-- Using cached msys2-which-2.23-4-x86_64.pkg.tar.zst
+-- Using cached msys2-bash-5.2.037-2-x86_64.pkg.tar.zst
+-- Using cached msys2-coreutils-8.32-5-x86_64.pkg.tar.zst
+-- Using cached msys2-file-5.46-2-x86_64.pkg.tar.zst
+-- Using cached msys2-gawk-5.3.2-1-x86_64.pkg.tar.zst
+-- Using cached msys2-grep-1~3.0-7-x86_64.pkg.tar.zst
+-- Using cached msys2-gzip-1.14-1-x86_64.pkg.tar.zst
+-- Using cached msys2-diffutils-3.12-1-x86_64.pkg.tar.zst
+-- Using cached msys2-sed-4.9-1-x86_64.pkg.tar.zst
+-- Using cached msys2-msys2-runtime-3.6.2-2-x86_64.pkg.tar.zst
+-- Using cached msys2-autoconf2.72-2.72-3-any.pkg.tar.zst
+-- Using cached msys2-automake1.16-1.16.5-1-any.pkg.tar.zst
+-- Using cached msys2-automake1.17-1.17-1-any.pkg.tar.zst
+-- Using cached msys2-libiconv-1.18-1-x86_64.pkg.tar.zst
+-- Using cached msys2-libintl-0.22.5-1-x86_64.pkg.tar.zst
+-- Using cached msys2-zlib-1.3.1-1-x86_64.pkg.tar.zst
+-- Using cached msys2-findutils-4.10.0-2-x86_64.pkg.tar.zst
+-- Using cached msys2-tar-1.35-2-x86_64.pkg.tar.zst
+-- Using cached msys2-gmp-6.3.0-1-x86_64.pkg.tar.zst
+-- Using cached msys2-gcc-libs-13.3.0-1-x86_64.pkg.tar.zst
+-- Using cached msys2-libbz2-1.0.8-4-x86_64.pkg.tar.zst
+-- Using cached msys2-liblzma-5.8.1-1-x86_64.pkg.tar.zst
+-- Using cached msys2-libzstd-1.5.7-1-x86_64.pkg.tar.zst
+-- Using cached msys2-libreadline-8.2.013-1-x86_64.pkg.tar.zst
+-- Using cached msys2-mpfr-4.2.2-1-x86_64.pkg.tar.zst
+-- Using cached msys2-libpcre-8.45-5-x86_64.pkg.tar.zst
+-- Using cached msys2-m4-1.4.19-2-x86_64.pkg.tar.zst
+-- Using cached msys2-perl-5.38.4-2-x86_64.pkg.tar.zst
+-- Using cached msys2-ncurses-6.5.20240831-2-x86_64.pkg.tar.zst
+-- Using cached msys2-libxcrypt-4.4.38-1-x86_64.pkg.tar.zst
+-- Using msys root at C:/dev/vcpkg/downloads/tools/msys2/7c55719f9ca5acf6
+-- Using cached msys2-mingw-w64-x86_64-pkgconf-1~2.4.3-1-any.pkg.tar.zst
+-- Using cached msys2-msys2-runtime-3.6.2-2-x86_64.pkg.tar.zst
+-- Using msys root at C:/dev/vcpkg/downloads/tools/msys2/9272adbcaf19caef
+-- Configuring x64-windows-dbg
+-- Configuring x64-windows-rel
+-- Building x64-windows-dbg
+-- Installing x64-windows-dbg
+-- Building x64-windows-rel
+-- Installing x64-windows-rel
+-- Installing: C:/dev/vcpkg/packages/libiconv_x64-windows/share/libiconv/usage
+-- Performing post-build validation
+Starting submission of libiconv:x64-windows@1.18#2 to 1 binary cache(s) in the background
+Elapsed time to handle libiconv:x64-windows: 4.4 min
+libiconv:x64-windows package ABI: e493144916ea8493dc16a1418000ad0e1dec88c7fdd6fcb7f22e56e8eceb72b4
+Installing 9/35 gettext-libintl:x64-windows@0.22.5#4...
+Building gettext-libintl:x64-windows@0.22.5#4...
+Downloading gettext-0.22.5.tar.gz, trying https://ftpmirror.gnu.org/gnu/gettext/gettext-0.22.5.tar.gz
+Successfully downloaded gettext-0.22.5.tar.gz
+-- Extracting source C:/dev/vcpkg/downloads/gettext-0.22.5.tar.gz
+-- Applying patch uwp.patch
+-- Applying patch 0003-Fix-win-unicode-paths.patch
+-- Using source at C:/dev/vcpkg/buildtrees/gettext-libintl/src/gettext-0-5775b97cd5.clean
+-- Modifying 'configure' to use fast bash variable expansion
+-- Getting CMake variables for x64-windows
+-- Loading CMake variables from C:/dev/vcpkg/buildtrees/gettext-libintl/cmake-get-vars_C_CXX-x64-windows.cmake.log
+-- Using cached msys2-autoconf-wrapper-20240607-1-any.pkg.tar.zst
+-- Using cached msys2-automake-wrapper-20240607-1-any.pkg.tar.zst
+Downloading msys2-autoconf-archive-2023.02.20-1-any.pkg.tar.zst, trying https://mirror.msys2.org/msys/x86_64/autoconf-archive-2023.02.20-1-any.pkg.tar.zst
+Successfully downloaded msys2-autoconf-archive-2023.02.20-1-any.pkg.tar.zst
+-- Using cached msys2-binutils-2.44-1-x86_64.pkg.tar.zst
+-- Using cached msys2-libtool-2.5.4-1-x86_64.pkg.tar.zst
+-- Using cached msys2-make-4.4.1-2-x86_64.pkg.tar.zst
+-- Using cached msys2-which-2.23-4-x86_64.pkg.tar.zst
+-- Using cached msys2-bash-5.2.037-2-x86_64.pkg.tar.zst
+-- Using cached msys2-coreutils-8.32-5-x86_64.pkg.tar.zst
+-- Using cached msys2-file-5.46-2-x86_64.pkg.tar.zst
+-- Using cached msys2-gawk-5.3.2-1-x86_64.pkg.tar.zst
+-- Using cached msys2-grep-1~3.0-7-x86_64.pkg.tar.zst
+-- Using cached msys2-gzip-1.14-1-x86_64.pkg.tar.zst
+-- Using cached msys2-diffutils-3.12-1-x86_64.pkg.tar.zst
+-- Using cached msys2-pkgconf-2.4.3-1-x86_64.pkg.tar.zst
+-- Using cached msys2-sed-4.9-1-x86_64.pkg.tar.zst
+-- Using cached msys2-msys2-runtime-3.6.2-2-x86_64.pkg.tar.zst
+-- Using cached msys2-autoconf2.72-2.72-3-any.pkg.tar.zst
+-- Using cached msys2-automake1.16-1.16.5-1-any.pkg.tar.zst
+-- Using cached msys2-automake1.17-1.17-1-any.pkg.tar.zst
+-- Using cached msys2-libiconv-1.18-1-x86_64.pkg.tar.zst
+-- Using cached msys2-libintl-0.22.5-1-x86_64.pkg.tar.zst
+-- Using cached msys2-zlib-1.3.1-1-x86_64.pkg.tar.zst
+-- Using cached msys2-findutils-4.10.0-2-x86_64.pkg.tar.zst
+-- Using cached msys2-tar-1.35-2-x86_64.pkg.tar.zst
+-- Using cached msys2-gmp-6.3.0-1-x86_64.pkg.tar.zst
+-- Using cached msys2-gcc-libs-13.3.0-1-x86_64.pkg.tar.zst
+-- Using cached msys2-libbz2-1.0.8-4-x86_64.pkg.tar.zst
+-- Using cached msys2-liblzma-5.8.1-1-x86_64.pkg.tar.zst
+-- Using cached msys2-libzstd-1.5.7-1-x86_64.pkg.tar.zst
+-- Using cached msys2-libreadline-8.2.013-1-x86_64.pkg.tar.zst
+-- Using cached msys2-mpfr-4.2.2-1-x86_64.pkg.tar.zst
+-- Using cached msys2-libpcre-8.45-5-x86_64.pkg.tar.zst
+-- Using cached msys2-m4-1.4.19-2-x86_64.pkg.tar.zst
+-- Using cached msys2-perl-5.38.4-2-x86_64.pkg.tar.zst
+-- Using cached msys2-ncurses-6.5.20240831-2-x86_64.pkg.tar.zst
+-- Using cached msys2-libxcrypt-4.4.38-1-x86_64.pkg.tar.zst
+-- Applying patch C:/dev/vcpkg/scripts/cmake/compile_wrapper_consider_clang-cl.patch
+-- Using msys root at C:/dev/vcpkg/downloads/tools/msys2/8392cd453c24d30d
+-- Using cached msys2-mingw-w64-x86_64-pkgconf-1~2.4.3-1-any.pkg.tar.zst
+-- Using cached msys2-msys2-runtime-3.6.2-2-x86_64.pkg.tar.zst
+-- Using msys root at C:/dev/vcpkg/downloads/tools/msys2/9272adbcaf19caef
+-- Configuring x64-windows-dbg
+-- Configuring x64-windows-rel
+-- Using cached msys2-autoconf-wrapper-20240607-1-any.pkg.tar.zst
+-- Using cached msys2-automake-wrapper-20240607-1-any.pkg.tar.zst
+-- Using cached msys2-autoconf-archive-2023.02.20-1-any.pkg.tar.zst
+-- Using cached msys2-binutils-2.44-1-x86_64.pkg.tar.zst
+-- Using cached msys2-libtool-2.5.4-1-x86_64.pkg.tar.zst
+-- Using cached msys2-make-4.4.1-2-x86_64.pkg.tar.zst
+-- Using cached msys2-which-2.23-4-x86_64.pkg.tar.zst
+-- Using cached msys2-bash-5.2.037-2-x86_64.pkg.tar.zst
+-- Using cached msys2-coreutils-8.32-5-x86_64.pkg.tar.zst
+-- Using cached msys2-file-5.46-2-x86_64.pkg.tar.zst
+-- Using cached msys2-gawk-5.3.2-1-x86_64.pkg.tar.zst
+-- Using cached msys2-grep-1~3.0-7-x86_64.pkg.tar.zst
+-- Using cached msys2-gzip-1.14-1-x86_64.pkg.tar.zst
+-- Using cached msys2-diffutils-3.12-1-x86_64.pkg.tar.zst
+-- Using cached msys2-pkgconf-2.4.3-1-x86_64.pkg.tar.zst
+-- Using cached msys2-sed-4.9-1-x86_64.pkg.tar.zst
+-- Using cached msys2-msys2-runtime-3.6.2-2-x86_64.pkg.tar.zst
+-- Using cached msys2-autoconf2.72-2.72-3-any.pkg.tar.zst
+-- Using cached msys2-automake1.16-1.16.5-1-any.pkg.tar.zst
+-- Using cached msys2-automake1.17-1.17-1-any.pkg.tar.zst
+-- Using cached msys2-libiconv-1.18-1-x86_64.pkg.tar.zst
+-- Using cached msys2-libintl-0.22.5-1-x86_64.pkg.tar.zst
+-- Using cached msys2-zlib-1.3.1-1-x86_64.pkg.tar.zst
+-- Using cached msys2-findutils-4.10.0-2-x86_64.pkg.tar.zst
+-- Using cached msys2-tar-1.35-2-x86_64.pkg.tar.zst
+-- Using cached msys2-gmp-6.3.0-1-x86_64.pkg.tar.zst
+-- Using cached msys2-gcc-libs-13.3.0-1-x86_64.pkg.tar.zst
+-- Using cached msys2-libbz2-1.0.8-4-x86_64.pkg.tar.zst
+-- Using cached msys2-liblzma-5.8.1-1-x86_64.pkg.tar.zst
+-- Using cached msys2-libzstd-1.5.7-1-x86_64.pkg.tar.zst
+-- Using cached msys2-libreadline-8.2.013-1-x86_64.pkg.tar.zst
+-- Using cached msys2-mpfr-4.2.2-1-x86_64.pkg.tar.zst
+-- Using cached msys2-libpcre-8.45-5-x86_64.pkg.tar.zst
+-- Using cached msys2-m4-1.4.19-2-x86_64.pkg.tar.zst
+-- Using cached msys2-perl-5.38.4-2-x86_64.pkg.tar.zst
+-- Using cached msys2-ncurses-6.5.20240831-2-x86_64.pkg.tar.zst
+-- Using cached msys2-libxcrypt-4.4.38-1-x86_64.pkg.tar.zst
+-- Using msys root at C:/dev/vcpkg/downloads/tools/msys2/8392cd453c24d30d
+-- Building/Installing x64-windows-dbg
+-- Making target 'all' for x64-windows-dbg
+-- Making target 'install' for x64-windows-dbg
+-- Building/Installing x64-windows-rel
+-- Making target 'all' for x64-windows-rel
+-- Making target 'install' for x64-windows-rel
+-- Installing: C:/dev/vcpkg/packages/gettext-libintl_x64-windows/share/gettext-libintl/copyright
+-- Performing post-build validation
+Starting submission of gettext-libintl:x64-windows@0.22.5#4 to 1 binary cache(s) in the background
+Elapsed time to handle gettext-libintl:x64-windows: 3.3 min
+gettext-libintl:x64-windows package ABI: c5608187aa6847f25597287eedeee9f3cf6c5a37c6398931eaa82e61def7f055
+Completed submission of libiconv:x64-windows@1.18#2 to 1 binary cache(s) in 106 ms
+Installing 10/35 gettext:x64-windows@0.22.5#3...
+Building gettext:x64-windows@0.22.5#3...
+-- Using cached gettext-0.22.5.tar.gz
+-- Extracting source C:/dev/vcpkg/downloads/gettext-0.22.5.tar.gz
+-- Applying patch assume-modern-darwin.patch
+-- Applying patch uwp.patch
+-- Applying patch rel_path.patch
+-- Applying patch subdirs.patch
+-- Applying patch parallel-gettext-tools.patch
+-- Applying patch config-step-order.patch
+-- Applying patch 0001-xgettext-Fix-some-test-failures-on-MSVC.patch
+-- Using source at C:/dev/vcpkg/buildtrees/gettext/src/gettext-0-5736b92587.clean
+-- Using cached msys2-gzip-1.14-1-x86_64.pkg.tar.zst
+-- Using cached msys2-bash-5.2.037-2-x86_64.pkg.tar.zst
+-- Using cached msys2-coreutils-8.32-5-x86_64.pkg.tar.zst
+-- Using cached msys2-file-5.46-2-x86_64.pkg.tar.zst
+-- Using cached msys2-gawk-5.3.2-1-x86_64.pkg.tar.zst
+-- Using cached msys2-grep-1~3.0-7-x86_64.pkg.tar.zst
+-- Using cached msys2-diffutils-3.12-1-x86_64.pkg.tar.zst
+-- Using cached msys2-make-4.4.1-2-x86_64.pkg.tar.zst
+-- Using cached msys2-pkgconf-2.4.3-1-x86_64.pkg.tar.zst
+-- Using cached msys2-sed-4.9-1-x86_64.pkg.tar.zst
+-- Using cached msys2-msys2-runtime-3.6.2-2-x86_64.pkg.tar.zst
+-- Using cached msys2-libiconv-1.18-1-x86_64.pkg.tar.zst
+-- Using cached msys2-libintl-0.22.5-1-x86_64.pkg.tar.zst
+-- Using cached msys2-gmp-6.3.0-1-x86_64.pkg.tar.zst
+-- Using cached msys2-gcc-libs-13.3.0-1-x86_64.pkg.tar.zst
+-- Using cached msys2-libbz2-1.0.8-4-x86_64.pkg.tar.zst
+-- Using cached msys2-liblzma-5.8.1-1-x86_64.pkg.tar.zst
+-- Using cached msys2-libzstd-1.5.7-1-x86_64.pkg.tar.zst
+-- Using cached msys2-zlib-1.3.1-1-x86_64.pkg.tar.zst
+-- Using cached msys2-libreadline-8.2.013-1-x86_64.pkg.tar.zst
+-- Using cached msys2-mpfr-4.2.2-1-x86_64.pkg.tar.zst
+-- Using cached msys2-libpcre-8.45-5-x86_64.pkg.tar.zst
+-- Using cached msys2-ncurses-6.5.20240831-2-x86_64.pkg.tar.zst
+-- Using msys root at C:/dev/vcpkg/downloads/tools/msys2/cf4f2faeddeddd21
+-- Installing: C:/dev/vcpkg/packages/gettext_x64-windows/tools/gettext/bin/autopoint
+-- Installing: C:/dev/vcpkg/packages/gettext_x64-windows/share/gettext/gettext/archive.dir.tar.gz
+-- Installing: C:/dev/vcpkg/packages/gettext_x64-windows/share/gettext/aclocal/build-to-host.m4
+-- Installing: C:/dev/vcpkg/packages/gettext_x64-windows/share/gettext/aclocal/gettext.m4
+-- Installing: C:/dev/vcpkg/packages/gettext_x64-windows/share/gettext/aclocal/iconv.m4
+-- Installing: C:/dev/vcpkg/packages/gettext_x64-windows/share/gettext/aclocal/intlmacosx.m4
+-- Installing: C:/dev/vcpkg/packages/gettext_x64-windows/share/gettext/aclocal/nls.m4
+-- Installing: C:/dev/vcpkg/packages/gettext_x64-windows/share/gettext/aclocal/po.m4
+-- Installing: C:/dev/vcpkg/packages/gettext_x64-windows/share/gettext/aclocal/progtest.m4
+-- Installing: C:/dev/vcpkg/packages/gettext_x64-windows/share/gettext/aclocal/host-cpu-c-abi.m4
+-- Installing: C:/dev/vcpkg/packages/gettext_x64-windows/share/gettext/aclocal/lib-ld.m4
+-- Installing: C:/dev/vcpkg/packages/gettext_x64-windows/share/gettext/aclocal/lib-link.m4
+-- Installing: C:/dev/vcpkg/packages/gettext_x64-windows/share/gettext/aclocal/lib-prefix.m4
+-- Skipping post-build validation due to VCPKG_POLICY_EMPTY_PACKAGE
+Starting submission of gettext:x64-windows@0.22.5#3 to 1 binary cache(s) in the background
+Elapsed time to handle gettext:x64-windows: 6.2 s
+gettext:x64-windows package ABI: ccf0b80f713a4ccd1f529fb8bbd81b67b2082e5758337adad537a0ee15bfb6da
+Completed submission of gettext-libintl:x64-windows@0.22.5#4 to 1 binary cache(s) in 102 ms
+Installing 11/35 jsoncpp:x64-windows@1.9.6...
+Building jsoncpp:x64-windows@1.9.6...
+Downloading https://github.com/open-source-parsers/jsoncpp/archive/1.9.6.tar.gz -> open-source-parsers-jsoncpp-1.9.6.tar.gz
+Successfully downloaded open-source-parsers-jsoncpp-1.9.6.tar.gz
+-- Extracting source C:/dev/vcpkg/downloads/open-source-parsers-jsoncpp-1.9.6.tar.gz
+-- Using source at C:/dev/vcpkg/buildtrees/jsoncpp/src/1.9.6-29ceffc35f.clean
+-- Configuring x64-windows
+-- Building x64-windows-dbg
+-- Building x64-windows-rel
+-- Fixing pkgconfig file: C:/dev/vcpkg/packages/jsoncpp_x64-windows/lib/pkgconfig/jsoncpp.pc
+-- Using cached msys2-mingw-w64-x86_64-pkgconf-1~2.4.3-1-any.pkg.tar.zst
+-- Using cached msys2-msys2-runtime-3.6.2-2-x86_64.pkg.tar.zst
+-- Using msys root at C:/dev/vcpkg/downloads/tools/msys2/9272adbcaf19caef
+-- Fixing pkgconfig file: C:/dev/vcpkg/packages/jsoncpp_x64-windows/debug/lib/pkgconfig/jsoncpp.pc
+-- Installing: C:/dev/vcpkg/packages/jsoncpp_x64-windows/share/jsoncpp/copyright
+-- Performing post-build validation
+Starting submission of jsoncpp:x64-windows@1.9.6 to 1 binary cache(s) in the background
+Elapsed time to handle jsoncpp:x64-windows: 6.8 s
+jsoncpp:x64-windows package ABI: 161ca409c27dbddd95e450beeb3b3d1ae08cd1ece687a4f3a971425650e3e747
+Completed submission of gettext:x64-windows@0.22.5#3 to 1 binary cache(s) in 147 ms
+Installing 12/35 openssl:x64-windows@3.6.0#2...
+Building openssl:x64-windows@3.6.0#2...
+Downloading https://github.com/openssl/openssl/archive/openssl-3.6.0.tar.gz -> openssl-openssl-openssl-3.6.0.tar.gz
+Successfully downloaded openssl-openssl-openssl-3.6.0.tar.gz
+-- Extracting source C:/dev/vcpkg/downloads/openssl-openssl-openssl-3.6.0.tar.gz
+-- Applying patch cmake-config.patch
+-- Applying patch command-line-length.patch
+-- Applying patch script-prefix.patch
+-- Applying patch aes_cfb128_vaes_encdec_wrapper.diff
+-- Applying patch windows/install-layout.patch
+-- Applying patch windows/install-pdbs.patch
+-- Applying patch windows/install-programs.diff
+-- Applying patch unix/android-cc.patch
+-- Applying patch unix/move-openssldir.patch
+-- Applying patch unix/no-empty-dirs.patch
+-- Applying patch unix/no-static-libs-for-shared.patch
+-- Using source at C:/dev/vcpkg/buildtrees/openssl/src/nssl-3.6.0-e5f21250ea.clean
+-- Getting CMake variables for x64-windows
+-- Loading CMake variables from C:/dev/vcpkg/buildtrees/openssl/cmake-get-vars_C_CXX-x64-windows.cmake.log
+Downloading https://github.com/StrawberryPerl/Perl-Dist-Strawberry/releases/download/SP_54201_64bit/strawberry-perl-5.42.0.1-64bit-portable.zip -> strawberry-perl-5.42.0.1-64bit-portable.zip
+Successfully downloaded strawberry-perl-5.42.0.1-64bit-portable.zip
+Downloading nasm-2.16.03-win64.zip, trying https://www.nasm.us/pub/nasm/releasebuilds/2.16.03/win64/nasm-2.16.03-win64.zip
+Successfully downloaded nasm-2.16.03-win64.zip
+-- Getting CMake variables for x64-windows
+Downloading jom_1_1_4.zip, trying https://download.qt.io/official_releases/jom/jom_1_1_4.zip
+Successfully downloaded jom_1_1_4.zip
+-- Prerunning x64-windows-dbg
+-- Building x64-windows-dbg
+-- Prerunning x64-windows-rel
+-- Building x64-windows-rel
+-- Fixing pkgconfig file: C:/dev/vcpkg/packages/openssl_x64-windows/lib/pkgconfig/libcrypto.pc
+-- Fixing pkgconfig file: C:/dev/vcpkg/packages/openssl_x64-windows/lib/pkgconfig/libssl.pc
+-- Fixing pkgconfig file: C:/dev/vcpkg/packages/openssl_x64-windows/lib/pkgconfig/openssl.pc
+-- Using cached msys2-mingw-w64-x86_64-pkgconf-1~2.4.3-1-any.pkg.tar.zst
+-- Using cached msys2-msys2-runtime-3.6.2-2-x86_64.pkg.tar.zst
+-- Using msys root at C:/dev/vcpkg/downloads/tools/msys2/9272adbcaf19caef
+-- Fixing pkgconfig file: C:/dev/vcpkg/packages/openssl_x64-windows/debug/lib/pkgconfig/libcrypto.pc
+-- Fixing pkgconfig file: C:/dev/vcpkg/packages/openssl_x64-windows/debug/lib/pkgconfig/libssl.pc
+-- Fixing pkgconfig file: C:/dev/vcpkg/packages/openssl_x64-windows/debug/lib/pkgconfig/openssl.pc
+-- Installing: C:/dev/vcpkg/packages/openssl_x64-windows/share/openssl/usage
+-- Installing: C:/dev/vcpkg/packages/openssl_x64-windows/share/openssl/copyright
+-- Performing post-build validation
+Starting submission of openssl:x64-windows@3.6.0#2 to 1 binary cache(s) in the background
+Elapsed time to handle openssl:x64-windows: 3.3 min
+openssl:x64-windows package ABI: d9e9bbeb94ac56dd62a8b59739c8825943f444b7f9f3c9900a3edcb724b64c09
+Completed submission of jsoncpp:x64-windows@1.9.6 to 1 binary cache(s) in 362 ms
+Installing 13/35 zstd:x64-windows@1.5.7...
+Building zstd:x64-windows@1.5.7...
+Downloading https://github.com/facebook/zstd/archive/v1.5.7.tar.gz -> facebook-zstd-v1.5.7.tar.gz
+Successfully downloaded facebook-zstd-v1.5.7.tar.gz
+-- Extracting source C:/dev/vcpkg/downloads/facebook-zstd-v1.5.7.tar.gz
+-- Applying patch no-static-suffix.patch
+-- Applying patch fix-emscripten-and-clang-cl.patch
+-- Applying patch fix-windows-rc-compile.patch
+-- Using source at C:/dev/vcpkg/buildtrees/zstd/src/v1.5.7-bb6cae2b2e.clean
+-- Configuring x64-windows
+-- Building x64-windows-dbg
+-- Building x64-windows-rel
+-- Fixing pkgconfig file: C:/dev/vcpkg/packages/zstd_x64-windows/lib/pkgconfig/libzstd.pc
+-- Using cached msys2-mingw-w64-x86_64-pkgconf-1~2.4.3-1-any.pkg.tar.zst
+-- Using cached msys2-msys2-runtime-3.6.2-2-x86_64.pkg.tar.zst
+-- Using msys root at C:/dev/vcpkg/downloads/tools/msys2/9272adbcaf19caef
+-- Fixing pkgconfig file: C:/dev/vcpkg/packages/zstd_x64-windows/debug/lib/pkgconfig/libzstd.pc
+-- Installing: C:/dev/vcpkg/packages/zstd_x64-windows/share/zstd/usage
+-- Performing post-build validation
+Starting submission of zstd:x64-windows@1.5.7 to 1 binary cache(s) in the background
+Elapsed time to handle zstd:x64-windows: 8.4 s
+zstd:x64-windows package ABI: 93f5454b0f964c8423f6008ecc45d612fdd6e536ce18a91cdf01b913ce1f39a3
+Completed submission of openssl:x64-windows@3.6.0#2 to 1 binary cache(s) in 1.4 s
+Installing 14/35 sqlite3[core,json1]:x64-windows@3.50.4...
+Building sqlite3[core,json1]:x64-windows@3.50.4...
+Downloading https://sqlite.org/2025/sqlite-autoconf-3500400.tar.gz -> sqlite-autoconf-3500400.zip
+Successfully downloaded sqlite-autoconf-3500400.zip
+-- Extracting source C:/dev/vcpkg/downloads/sqlite-autoconf-3500400.zip
+-- Applying patch fix-arm-uwp.patch
+-- Applying patch add-config-include.patch
+-- Using source at C:/dev/vcpkg/buildtrees/sqlite3/src/nf-3500400-27a76b56ef.clean
+-- Configuring x64-windows
+-- Building x64-windows-dbg
+-- Building x64-windows-rel
+-- Fixing pkgconfig file: C:/dev/vcpkg/packages/sqlite3_x64-windows/lib/pkgconfig/sqlite3.pc
+-- Using cached msys2-mingw-w64-x86_64-pkgconf-1~2.4.3-1-any.pkg.tar.zst
+-- Using cached msys2-msys2-runtime-3.6.2-2-x86_64.pkg.tar.zst
+-- Using msys root at C:/dev/vcpkg/downloads/tools/msys2/9272adbcaf19caef
+-- Fixing pkgconfig file: C:/dev/vcpkg/packages/sqlite3_x64-windows/debug/lib/pkgconfig/sqlite3.pc
+-- Installing: C:/dev/vcpkg/packages/sqlite3_x64-windows/share/sqlite3/usage
+-- Performing post-build validation
+Starting submission of sqlite3[core,json1]:x64-windows@3.50.4 to 1 binary cache(s) in the background
+Elapsed time to handle sqlite3:x64-windows: 11 s
+sqlite3:x64-windows package ABI: 277159cec127d568e2e8af329cd3f8ef449f2dd420fbdb72d3d67beac968e3d0
+Completed submission of zstd:x64-windows@1.5.7 to 1 binary cache(s) in 247 ms
+Installing 15/35 lz4:x64-windows@1.10.0...
+Building lz4:x64-windows@1.10.0...
+Downloading https://github.com/lz4/lz4/archive/v1.10.0.tar.gz -> lz4-lz4-v1.10.0.tar.gz
+Successfully downloaded lz4-lz4-v1.10.0.tar.gz
+-- Extracting source C:/dev/vcpkg/downloads/lz4-lz4-v1.10.0.tar.gz
+-- Applying patch target-lz4-lz4.diff
+-- Using source at C:/dev/vcpkg/buildtrees/lz4/src/v1.10.0-61bd08d80e.clean
+-- Configuring x64-windows
+-- Building x64-windows-dbg
+-- Building x64-windows-rel
+-- Fixing pkgconfig file: C:/dev/vcpkg/packages/lz4_x64-windows/lib/pkgconfig/liblz4.pc
+-- Using cached msys2-mingw-w64-x86_64-pkgconf-1~2.4.3-1-any.pkg.tar.zst
+-- Using cached msys2-msys2-runtime-3.6.2-2-x86_64.pkg.tar.zst
+-- Using msys root at C:/dev/vcpkg/downloads/tools/msys2/9272adbcaf19caef
+-- Fixing pkgconfig file: C:/dev/vcpkg/packages/lz4_x64-windows/debug/lib/pkgconfig/liblz4.pc
+-- Installing: C:/dev/vcpkg/packages/lz4_x64-windows/share/lz4/usage
+-- Installing: C:/dev/vcpkg/packages/lz4_x64-windows/share/lz4/copyright
+-- Performing post-build validation
+Starting submission of lz4:x64-windows@1.10.0 to 1 binary cache(s) in the background
+Elapsed time to handle lz4:x64-windows: 3.8 s
+lz4:x64-windows package ABI: ed3a3982ff080f6963c22f2b197079b268b3a37e8f9af1da96f3ad9cd2e850f2
+Completed submission of sqlite3[core,json1]:x64-windows@3.50.4 to 1 binary cache(s) in 289 ms
+Installing 16/35 vcpkg-tool-meson:x64-windows@1.9.0#3...
+Building vcpkg-tool-meson:x64-windows@1.9.0#3...
+-- Installing: C:/dev/vcpkg/packages/vcpkg-tool-meson_x64-windows/share/vcpkg-tool-meson/copyright
+Downloading https://github.com/mesonbuild/meson/archive/1.9.0.tar.gz -> meson-1.9.0.tar.gz
+Successfully downloaded meson-1.9.0.tar.gz
+-- Applying patch C:/dev/vcpkg/packages/vcpkg-tool-meson_x64-windows/share/vcpkg-tool-meson/meson-intl.patch
+-- Applying patch C:/dev/vcpkg/packages/vcpkg-tool-meson_x64-windows/share/vcpkg-tool-meson/adjust-python-dep.patch
+-- Applying patch C:/dev/vcpkg/packages/vcpkg-tool-meson_x64-windows/share/vcpkg-tool-meson/adjust-args.patch
+-- Applying patch C:/dev/vcpkg/packages/vcpkg-tool-meson_x64-windows/share/vcpkg-tool-meson/remove-pkgconfig-specialization.patch
+-- Applying patch C:/dev/vcpkg/packages/vcpkg-tool-meson_x64-windows/share/vcpkg-tool-meson/meson-56879d5.diff
+Downloading https://www.python.org/ftp/python/3.12.7/python-3.12.7-embed-amd64.zip -> python-3.12.7-embed-amd64.zip
+Successfully downloaded python-3.12.7-embed-amd64.zip
+-- Found Python version '3.12.7 at C:/dev/vcpkg/downloads/tools/python/python-3.12.7-x64-1/python.exe'
+-- Using meson: C:/dev/vcpkg/downloads/tools/meson-1.9.0-d1fcc2/meson.py
+-- Performing post-build validation
+Starting submission of vcpkg-tool-meson:x64-windows@1.9.0#3 to 1 binary cache(s) in the background
+Elapsed time to handle vcpkg-tool-meson:x64-windows: 5.1 s
+vcpkg-tool-meson:x64-windows package ABI: 1f84eea79b594373ed7be359bbfa791f0105abd1b3e059d954484b07b5f188cf
+Completed submission of lz4:x64-windows@1.10.0 to 1 binary cache(s) in 83.1 ms
+Installing 17/35 pkgconf:x64-windows@2.5.1#3...
+Building pkgconf:x64-windows@2.5.1#3...
+-- Found Python version '3.12.7 at C:/dev/vcpkg/downloads/tools/python/python-3.12.7-x64-1/python.exe'
+-- Using meson: C:/dev/vcpkg/downloads/tools/meson-1.9.0-d1fcc2/meson.py
+Downloading https://github.com/pkgconf/pkgconf/archive/pkgconf-2.5.1.tar.gz -> pkgconf-pkgconf-pkgconf-2.5.1.tar.gz
+Successfully downloaded pkgconf-pkgconf-pkgconf-2.5.1.tar.gz
+-- Extracting source C:/dev/vcpkg/downloads/pkgconf-pkgconf-pkgconf-2.5.1.tar.gz
+-- Applying patch 001-unveil-fixes.patch
+-- Using source at C:/dev/vcpkg/buildtrees/pkgconf/src/conf-2.5.1-5bc6f0da3f.clean
+-- Configuring x64-windows-dbg
+-- Getting CMake variables for x64-windows
+-- Loading CMake variables from C:/dev/vcpkg/buildtrees/pkgconf/cmake-get-vars_C_CXX-x64-windows.cmake.log
+-- Configuring x64-windows-dbg done
+-- Configuring x64-windows-rel
+-- Configuring x64-windows-rel done
+-- Package x64-windows-dbg
+-- Package x64-windows-rel
+-- Fixing pkgconfig file: C:/dev/vcpkg/packages/pkgconf_x64-windows/lib/pkgconfig/libpkgconf.pc
+-- Fixing pkgconfig file: C:/dev/vcpkg/packages/pkgconf_x64-windows/debug/lib/pkgconfig/libpkgconf.pc
+-- Installing: C:/dev/vcpkg/packages/pkgconf_x64-windows/share/pkgconf/copyright
+-- Performing post-build validation
+Starting submission of pkgconf:x64-windows@2.5.1#3 to 1 binary cache(s) in the background
+Elapsed time to handle pkgconf:x64-windows: 9.6 s
+pkgconf:x64-windows package ABI: 47ce881ca0cc1600f07e0a2db8aa13752a0d42582929159b6ba17bc81e2a1f86
+Completed submission of vcpkg-tool-meson:x64-windows@1.9.0#3 to 1 binary cache(s) in 23.1 ms
+Installing 18/35 vcpkg-pkgconfig-get-modules:x64-windows@2024-04-03...
+Building vcpkg-pkgconfig-get-modules:x64-windows@2024-04-03...
+-- Installing: C:/dev/vcpkg/packages/vcpkg-pkgconfig-get-modules_x64-windows/share/vcpkg-pkgconfig-get-modules/copyright
+-- Performing post-build validation
+Starting submission of vcpkg-pkgconfig-get-modules:x64-windows@2024-04-03 to 1 binary cache(s) in the background
+Elapsed time to handle vcpkg-pkgconfig-get-modules:x64-windows: 51 ms
+vcpkg-pkgconfig-get-modules:x64-windows package ABI: cc89b23962ee3465eb6f5952c934b91555ee13ca31c0f9426f41a6d8025696ae
+Installing 19/35 libpq[core,lz4,openssl,zlib]:x64-windows@16.9#1...
+Building libpq[core,lz4,openssl,zlib]:x64-windows@16.9#1...
+Downloading postgresql-16.9.tar.bz2, trying https://ftp.postgresql.org/pub/source/v16.9/postgresql-16.9.tar.bz2
+Successfully downloaded postgresql-16.9.tar.bz2
+-- Extracting source C:/dev/vcpkg/downloads/postgresql-16.9.tar.bz2
+-- Applying patch unix/installdirs.patch
+-- Applying patch unix/fix-configure.patch
+-- Applying patch unix/single-linkage.patch
+-- Applying patch unix/no-server-tools.patch
+-- Applying patch unix/mingw-install.patch
+-- Applying patch unix/python.patch
+-- Applying patch windows/macro-def.patch
+-- Applying patch windows/win_bison_flex.patch
+-- Applying patch windows/msbuild.patch
+-- Applying patch windows/spin_delay.patch
+-- Applying patch windows/tcl-9.0-alpha.patch
+-- Applying patch android/unversioned_so.patch
+-- Using source at C:/dev/vcpkg/buildtrees/libpq/src/tgresql-16-e1df654f15.clean
+-- Getting CMake variables for x64-windows
+-- Loading CMake variables from C:/dev/vcpkg/buildtrees/libpq/cmake-get-vars_C_CXX-x64-windows.cmake.log
+Downloading https://github.com/lexxmark/winflexbison/releases/download/v2.5.24/win_flex_bison-2.5.24.zip -> win_flex_bison-2.5.24.zip
+Successfully downloaded win_flex_bison-2.5.24.zip
+-- Building x64-windows-dbg
+-- Installing x64-windows-dbg
+-- Building x64-windows-rel
+-- Installing x64-windows-rel
+-- Using cached msys2-mingw-w64-x86_64-pkgconf-1~2.4.3-1-any.pkg.tar.zst
+-- Using cached msys2-msys2-runtime-3.6.2-2-x86_64.pkg.tar.zst
+-- Using msys root at C:/dev/vcpkg/downloads/tools/msys2/9272adbcaf19caef
+-- Installing: C:/dev/vcpkg/packages/libpq_x64-windows/share/libpq/usage
+-- Installing: C:/dev/vcpkg/packages/libpq_x64-windows/share/libpq/copyright
+-- Performing post-build validation
+Starting submission of libpq[core,lz4,openssl,zlib]:x64-windows@16.9#1 to 1 binary cache(s) in the background
+Elapsed time to handle libpq:x64-windows: 1.5 min
+libpq:x64-windows package ABI: 143b82fc13fdf87a1f155e896be55d8c7007b54a09c9cea46932ce47677a85ec
+Completed submission of pkgconf:x64-windows@2.5.1#3 to 1 binary cache(s) in 73.9 ms
+Completed submission of vcpkg-pkgconfig-get-modules:x64-windows@2024-04-03 to 1 binary cache(s) in 20.8 ms
+Installing 20/35 libpng:x64-windows@1.6.50...
+Building libpng:x64-windows@1.6.50...
+Downloading https://github.com/pnggroup/libpng/archive/v1.6.50.tar.gz -> pnggroup-libpng-v1.6.50.tar.gz
+Successfully downloaded pnggroup-libpng-v1.6.50.tar.gz
+-- Extracting source C:/dev/vcpkg/downloads/pnggroup-libpng-v1.6.50.tar.gz
+-- Applying patch cmake.patch
+-- Using source at C:/dev/vcpkg/buildtrees/libpng/src/v1.6.50-13b6aa9451.clean
+-- Configuring x64-windows
+-- Building x64-windows-dbg
+-- Building x64-windows-rel
+-- Installing: C:/dev/vcpkg/packages/libpng_x64-windows/share/png/vcpkg-cmake-wrapper.cmake
+-- Installing: C:/dev/vcpkg/packages/libpng_x64-windows/share/libpng/libpng-config.cmake
+-- Fixing pkgconfig file: C:/dev/vcpkg/packages/libpng_x64-windows/lib/pkgconfig/libpng16.pc
+-- Using cached msys2-mingw-w64-x86_64-pkgconf-1~2.4.3-1-any.pkg.tar.zst
+-- Using cached msys2-msys2-runtime-3.6.2-2-x86_64.pkg.tar.zst
+-- Using msys root at C:/dev/vcpkg/downloads/tools/msys2/9272adbcaf19caef
+-- Fixing pkgconfig file: C:/dev/vcpkg/packages/libpng_x64-windows/debug/lib/pkgconfig/libpng16.pc
+-- Installing: C:/dev/vcpkg/packages/libpng_x64-windows/debug/lib/pkgconfig/libpng.pc
+-- Installing: C:/dev/vcpkg/packages/libpng_x64-windows/lib/pkgconfig/libpng.pc
+-- Installing: C:/dev/vcpkg/packages/libpng_x64-windows/share/libpng/usage
+-- Installing: C:/dev/vcpkg/packages/libpng_x64-windows/share/libpng/copyright
+-- Performing post-build validation
+Starting submission of libpng:x64-windows@1.6.50 to 1 binary cache(s) in the background
+Elapsed time to handle libpng:x64-windows: 4.4 s
+libpng:x64-windows package ABI: f9b8c7b4b74f6b41e0619030385d5677f5910e3d98d7aed3a8af78304171e7b3
+Completed submission of libpq[core,lz4,openssl,zlib]:x64-windows@16.9#1 to 1 binary cache(s) in 342 ms
+Installing 21/35 pcre2[core,jit,platform-default-features]:x64-windows@10.47...
+Building pcre2[core,jit,platform-default-features]:x64-windows@10.47...
+Downloading https://github.com/PCRE2Project/pcre2/archive/pcre2-10.47.tar.gz -> PCRE2Project-pcre2-pcre2-10.47.tar.gz
+Successfully downloaded PCRE2Project-pcre2-pcre2-10.47.tar.gz
+-- Extracting source C:/dev/vcpkg/downloads/PCRE2Project-pcre2-pcre2-10.47.tar.gz
+-- Applying patch pcre2-10.35_fix-uwp.patch
+-- Applying patch no-static-suffix.patch
+-- Using source at C:/dev/vcpkg/buildtrees/pcre2/src/cre2-10.47-7b8426e64a.clean
+Downloading https://github.com/zherczeg/sljit/archive/45f910b78c6605ebf5b53d3ec7cb00f2312fe417.tar.gz -> zherczeg-sljit-45f910b78c6605ebf5b53d3ec7cb00f2312fe417.tar.gz
+Successfully downloaded zherczeg-sljit-45f910b78c6605ebf5b53d3ec7cb00f2312fe417.tar.gz
+-- Extracting source C:/dev/vcpkg/downloads/zherczeg-sljit-45f910b78c6605ebf5b53d3ec7cb00f2312fe417.tar.gz
+-- Using source at C:/dev/vcpkg/buildtrees/pcre2/src/f2312fe417-2bbc527107.clean
+-- Configuring x64-windows
+CMake Warning at D:/VSProj/ai-file-sorter/app/build-windows/vcpkg_installed/x64-windows/share/vcpkg-cmake/vcpkg_cmake_configure.cmake:346 (message):
+  The following variables are not used in CMakeLists.txt:
+
+      PCRE2_STATIC_RUNTIME
+
+  Please recheck them and remove the unnecessary options from the
+  `vcpkg_cmake_configure` call.
+
+  If these options should still be passed for whatever reason, please use the
+  `MAYBE_UNUSED_VARIABLES` argument.
+Call Stack (most recent call first):
+  buildtrees/versioning_/versions/pcre2/753cc6dbffbcde00b0c10b8d594108beb320a183/portfile.cmake:34 (vcpkg_cmake_configure)
+  scripts/ports.cmake:206 (include)
+
+
+-- Building x64-windows-dbg
+-- Building x64-windows-rel
+-- Fixing pkgconfig file: C:/dev/vcpkg/packages/pcre2_x64-windows/lib/pkgconfig/libpcre2-16.pc
+-- Fixing pkgconfig file: C:/dev/vcpkg/packages/pcre2_x64-windows/lib/pkgconfig/libpcre2-32.pc
+-- Fixing pkgconfig file: C:/dev/vcpkg/packages/pcre2_x64-windows/lib/pkgconfig/libpcre2-8.pc
+-- Fixing pkgconfig file: C:/dev/vcpkg/packages/pcre2_x64-windows/lib/pkgconfig/libpcre2-posix.pc
+-- Using cached msys2-mingw-w64-x86_64-pkgconf-1~2.4.3-1-any.pkg.tar.zst
+-- Using cached msys2-msys2-runtime-3.6.2-2-x86_64.pkg.tar.zst
+-- Using msys root at C:/dev/vcpkg/downloads/tools/msys2/9272adbcaf19caef
+-- Fixing pkgconfig file: C:/dev/vcpkg/packages/pcre2_x64-windows/debug/lib/pkgconfig/libpcre2-16.pc
+-- Fixing pkgconfig file: C:/dev/vcpkg/packages/pcre2_x64-windows/debug/lib/pkgconfig/libpcre2-32.pc
+-- Fixing pkgconfig file: C:/dev/vcpkg/packages/pcre2_x64-windows/debug/lib/pkgconfig/libpcre2-8.pc
+-- Fixing pkgconfig file: C:/dev/vcpkg/packages/pcre2_x64-windows/debug/lib/pkgconfig/libpcre2-posix.pc
+-- Installing: C:/dev/vcpkg/packages/pcre2_x64-windows/share/pcre2/usage
+-- Installing: C:/dev/vcpkg/packages/pcre2_x64-windows/share/pcre2/copyright
+-- Performing post-build validation
+Starting submission of pcre2[core,jit,platform-default-features]:x64-windows@10.47 to 1 binary cache(s) in the background
+Elapsed time to handle pcre2:x64-windows: 17 s
+pcre2:x64-windows package ABI: a3685a84c2ec18d85d422656914ae53dc184be58b2b31952d607b23fcedc0b60
+Completed submission of libpng:x64-windows@1.6.50 to 1 binary cache(s) in 110 ms
+Installing 22/35 egl-registry:x64-windows@2024-01-25...
+Building egl-registry:x64-windows@2024-01-25...
+Downloading https://github.com/KhronosGroup/EGL-Registry/archive/7db3005d4c2cb439f129a0adc931f3274f9019e6.tar.gz -> KhronosGroup-EGL-Registry-7db3005d4c2cb439f129a0adc931f3274f9019e6.tar.gz
+Successfully downloaded KhronosGroup-EGL-Registry-7db3005d4c2cb439f129a0adc931f3274f9019e6.tar.gz
+-- Extracting source C:/dev/vcpkg/downloads/KhronosGroup-EGL-Registry-7db3005d4c2cb439f129a0adc931f3274f9019e6.tar.gz
+-- Using source at C:/dev/vcpkg/buildtrees/egl-registry/src/274f9019e6-49d6bdb34a.clean
+-- Installing: C:/dev/vcpkg/packages/egl-registry_x64-windows/share/egl-registry/copyright
+-- Performing post-build validation
+Starting submission of egl-registry:x64-windows@2024-01-25 to 1 binary cache(s) in the background
+Elapsed time to handle egl-registry:x64-windows: 1.3 s
+egl-registry:x64-windows package ABI: 7e50d8c593c7233efb466c8b224df629bf411748cbff0f0615a47aad40b40cde
+Completed submission of pcre2[core,jit,platform-default-features]:x64-windows@10.47 to 1 binary cache(s) in 234 ms
+Installing 23/35 opengl-registry:x64-windows@2024-02-10#1...
+Building opengl-registry:x64-windows@2024-02-10#1...
+Downloading https://github.com/KhronosGroup/OpenGL-Registry/archive/3530768138c5ba3dfbb2c43c830493f632f7ea33.tar.gz -> KhronosGroup-OpenGL-Registry-3530768138c5ba3dfbb2c43c830493f632f7ea33.tar.gz
+Successfully downloaded KhronosGroup-OpenGL-Registry-3530768138c5ba3dfbb2c43c830493f632f7ea33.tar.gz
+-- Extracting source C:/dev/vcpkg/downloads/KhronosGroup-OpenGL-Registry-3530768138c5ba3dfbb2c43c830493f632f7ea33.tar.gz
+-- Using source at C:/dev/vcpkg/buildtrees/opengl-registry/src/f632f7ea33-4952f9ace9.clean
+-- Installing: C:/dev/vcpkg/packages/opengl-registry_x64-windows/share/opengl-registry/copyright
+-- Performing post-build validation
+Starting submission of opengl-registry:x64-windows@2024-02-10#1 to 1 binary cache(s) in the background
+Elapsed time to handle opengl-registry:x64-windows: 6.1 s
+opengl-registry:x64-windows package ABI: b3425ecd67c0ed4f50f8e61ba378fcea3fd74807ad4f08525fdf1d05807958fb
+Completed submission of egl-registry:x64-windows@2024-01-25 to 1 binary cache(s) in 32.1 ms
+Installing 24/35 opengl:x64-windows@2022-12-04#3...
+Building opengl:x64-windows@2022-12-04#3...
+-- Installing: C:/dev/vcpkg/packages/opengl_x64-windows/include/GL/gl.h
+-- Installing: C:/dev/vcpkg/packages/opengl_x64-windows/include/GL/glu.h
+-- Installing: C:/dev/vcpkg/packages/opengl_x64-windows/lib/OpenGL32.Lib
+-- Installing: C:/dev/vcpkg/packages/opengl_x64-windows/lib/GlU32.Lib
+-- Installing: C:/dev/vcpkg/packages/opengl_x64-windows/debug/lib/OpenGL32.Lib
+-- Installing: C:/dev/vcpkg/packages/opengl_x64-windows/debug/lib/GlU32.Lib
+-- Fixing pkgconfig file: C:/dev/vcpkg/packages/opengl_x64-windows/lib/pkgconfig/glu.pc
+-- Fixing pkgconfig file: C:/dev/vcpkg/packages/opengl_x64-windows/lib/pkgconfig/opengl.pc
+-- Using cached msys2-mingw-w64-x86_64-pkgconf-1~2.4.3-1-any.pkg.tar.zst
+-- Using cached msys2-msys2-runtime-3.6.2-2-x86_64.pkg.tar.zst
+-- Using msys root at C:/dev/vcpkg/downloads/tools/msys2/9272adbcaf19caef
+-- Fixing pkgconfig file: C:/dev/vcpkg/packages/opengl_x64-windows/debug/lib/pkgconfig/glu.pc
+-- Fixing pkgconfig file: C:/dev/vcpkg/packages/opengl_x64-windows/debug/lib/pkgconfig/opengl.pc
+-- Installing: C:/dev/vcpkg/packages/opengl_x64-windows/share/opengl/usage
+-- Performing post-build validation
+Starting submission of opengl:x64-windows@2022-12-04#3 to 1 binary cache(s) in the background
+Elapsed time to handle opengl:x64-windows: 171 ms
+opengl:x64-windows package ABI: 65c19d301cd5ee58ad5461b64c0ca02a4a4fe60e3a0dae15d10840127c0dd4ba
+Completed submission of opengl-registry:x64-windows@2024-02-10#1 to 1 binary cache(s) in 161 ms
+Installing 25/35 libjpeg-turbo:x64-windows@3.1.2...
+Building libjpeg-turbo:x64-windows@3.1.2...
+Downloading https://github.com/libjpeg-turbo/libjpeg-turbo/archive/3.1.2.tar.gz -> libjpeg-turbo-libjpeg-turbo-3.1.2.tar.gz
+Successfully downloaded libjpeg-turbo-libjpeg-turbo-3.1.2.tar.gz
+-- Extracting source C:/dev/vcpkg/downloads/libjpeg-turbo-libjpeg-turbo-3.1.2.tar.gz
+-- Applying patch add-options-for-docs-headers.patch
+-- Applying patch workaround_cmake_system_processor.patch
+-- Using source at C:/dev/vcpkg/buildtrees/libjpeg-turbo/src/3.1.2-8e222f7626.clean
+-- Configuring x64-windows
+-- Building x64-windows-dbg
+-- Building x64-windows-rel
+-- Fixing pkgconfig file: C:/dev/vcpkg/packages/libjpeg-turbo_x64-windows/lib/pkgconfig/libjpeg.pc
+-- Fixing pkgconfig file: C:/dev/vcpkg/packages/libjpeg-turbo_x64-windows/lib/pkgconfig/libturbojpeg.pc
+-- Using cached msys2-mingw-w64-x86_64-pkgconf-1~2.4.3-1-any.pkg.tar.zst
+-- Using cached msys2-msys2-runtime-3.6.2-2-x86_64.pkg.tar.zst
+-- Using msys root at C:/dev/vcpkg/downloads/tools/msys2/9272adbcaf19caef
+-- Fixing pkgconfig file: C:/dev/vcpkg/packages/libjpeg-turbo_x64-windows/debug/lib/pkgconfig/libjpeg.pc
+-- Fixing pkgconfig file: C:/dev/vcpkg/packages/libjpeg-turbo_x64-windows/debug/lib/pkgconfig/libturbojpeg.pc
+-- Installing: C:/dev/vcpkg/packages/libjpeg-turbo_x64-windows/share/libjpeg-turbo/copyright
+-- Performing post-build validation
+Starting submission of libjpeg-turbo:x64-windows@3.1.2 to 1 binary cache(s) in the background
+Elapsed time to handle libjpeg-turbo:x64-windows: 15 s
+libjpeg-turbo:x64-windows package ABI: 080f6e383f390b8b99c5cac3668a2a8f3891afe8048207bfd92138bd77f27cb0
+Completed submission of opengl:x64-windows@2022-12-04#3 to 1 binary cache(s) in 23.7 ms
+Installing 26/35 icu[core,tools]:x64-windows@74.2#6...
+Building icu[core,tools]:x64-windows@74.2#6...
+Downloading https://github.com/unicode-org/icu/releases/download/release-74-2/icu4c-74_2-src.tgz -> icu4c-74_2-src.tgz
+Successfully downloaded icu4c-74_2-src.tgz
+-- Extracting source C:/dev/vcpkg/downloads/icu4c-74_2-src.tgz
+-- Applying patch disable-escapestr-tool.patch
+-- Applying patch remove-MD-from-configure.patch
+-- Applying patch fix_parallel_build_on_windows.patch
+-- Applying patch fix-extra.patch
+-- Applying patch mingw-dll-install.patch
+-- Applying patch disable-static-prefix.patch
+-- Applying patch fix-win-build.patch
+-- Applying patch vcpkg-cross-data.patch
+-- Applying patch darwin-rpath.patch
+-- Applying patch mingw-strict-ansi.diff
+-- Applying patch cleanup_msvc.patch
+-- Using source at C:/dev/vcpkg/buildtrees/icu/src/c-74_2-src-2c60f3f6bd.clean
+-- Getting CMake variables for x64-windows
+-- Loading CMake variables from C:/dev/vcpkg/buildtrees/icu/cmake-get-vars_C_CXX-x64-windows.cmake.log
+-- Using cached msys2-autoconf-wrapper-20240607-1-any.pkg.tar.zst
+-- Using cached msys2-automake-wrapper-20240607-1-any.pkg.tar.zst
+-- Using cached msys2-autoconf-archive-2023.02.20-1-any.pkg.tar.zst
+-- Using cached msys2-binutils-2.44-1-x86_64.pkg.tar.zst
+-- Using cached msys2-libtool-2.5.4-1-x86_64.pkg.tar.zst
+-- Using cached msys2-make-4.4.1-2-x86_64.pkg.tar.zst
+-- Using cached msys2-which-2.23-4-x86_64.pkg.tar.zst
+-- Using cached msys2-bash-5.2.037-2-x86_64.pkg.tar.zst
+-- Using cached msys2-coreutils-8.32-5-x86_64.pkg.tar.zst
+-- Using cached msys2-file-5.46-2-x86_64.pkg.tar.zst
+-- Using cached msys2-gawk-5.3.2-1-x86_64.pkg.tar.zst
+-- Using cached msys2-grep-1~3.0-7-x86_64.pkg.tar.zst
+-- Using cached msys2-gzip-1.14-1-x86_64.pkg.tar.zst
+-- Using cached msys2-diffutils-3.12-1-x86_64.pkg.tar.zst
+-- Using cached msys2-pkgconf-2.4.3-1-x86_64.pkg.tar.zst
+-- Using cached msys2-sed-4.9-1-x86_64.pkg.tar.zst
+-- Using cached msys2-msys2-runtime-3.6.2-2-x86_64.pkg.tar.zst
+-- Using cached msys2-autoconf2.72-2.72-3-any.pkg.tar.zst
+-- Using cached msys2-automake1.16-1.16.5-1-any.pkg.tar.zst
+-- Using cached msys2-automake1.17-1.17-1-any.pkg.tar.zst
+-- Using cached msys2-libiconv-1.18-1-x86_64.pkg.tar.zst
+-- Using cached msys2-libintl-0.22.5-1-x86_64.pkg.tar.zst
+-- Using cached msys2-zlib-1.3.1-1-x86_64.pkg.tar.zst
+-- Using cached msys2-findutils-4.10.0-2-x86_64.pkg.tar.zst
+-- Using cached msys2-tar-1.35-2-x86_64.pkg.tar.zst
+-- Using cached msys2-gmp-6.3.0-1-x86_64.pkg.tar.zst
+-- Using cached msys2-gcc-libs-13.3.0-1-x86_64.pkg.tar.zst
+-- Using cached msys2-libbz2-1.0.8-4-x86_64.pkg.tar.zst
+-- Using cached msys2-liblzma-5.8.1-1-x86_64.pkg.tar.zst
+-- Using cached msys2-libzstd-1.5.7-1-x86_64.pkg.tar.zst
+-- Using cached msys2-libreadline-8.2.013-1-x86_64.pkg.tar.zst
+-- Using cached msys2-mpfr-4.2.2-1-x86_64.pkg.tar.zst
+-- Using cached msys2-libpcre-8.45-5-x86_64.pkg.tar.zst
+-- Using cached msys2-m4-1.4.19-2-x86_64.pkg.tar.zst
+-- Using cached msys2-perl-5.38.4-2-x86_64.pkg.tar.zst
+-- Using cached msys2-ncurses-6.5.20240831-2-x86_64.pkg.tar.zst
+-- Using cached msys2-libxcrypt-4.4.38-1-x86_64.pkg.tar.zst
+-- Using msys root at C:/dev/vcpkg/downloads/tools/msys2/8392cd453c24d30d
+-- Generating configure for x64-windows
+-- Finished generating configure for x64-windows
+-- Configuring x64-windows-dbg
+-- Configuring x64-windows-rel
+-- Using cached msys2-autoconf-wrapper-20240607-1-any.pkg.tar.zst
+-- Using cached msys2-automake-wrapper-20240607-1-any.pkg.tar.zst
+-- Using cached msys2-autoconf-archive-2023.02.20-1-any.pkg.tar.zst
+-- Using cached msys2-binutils-2.44-1-x86_64.pkg.tar.zst
+-- Using cached msys2-libtool-2.5.4-1-x86_64.pkg.tar.zst
+-- Using cached msys2-make-4.4.1-2-x86_64.pkg.tar.zst
+-- Using cached msys2-which-2.23-4-x86_64.pkg.tar.zst
+-- Using cached msys2-bash-5.2.037-2-x86_64.pkg.tar.zst
+-- Using cached msys2-coreutils-8.32-5-x86_64.pkg.tar.zst
+-- Using cached msys2-file-5.46-2-x86_64.pkg.tar.zst
+-- Using cached msys2-gawk-5.3.2-1-x86_64.pkg.tar.zst
+-- Using cached msys2-grep-1~3.0-7-x86_64.pkg.tar.zst
+-- Using cached msys2-gzip-1.14-1-x86_64.pkg.tar.zst
+-- Using cached msys2-diffutils-3.12-1-x86_64.pkg.tar.zst
+-- Using cached msys2-pkgconf-2.4.3-1-x86_64.pkg.tar.zst
+-- Using cached msys2-sed-4.9-1-x86_64.pkg.tar.zst
+-- Using cached msys2-msys2-runtime-3.6.2-2-x86_64.pkg.tar.zst
+-- Using cached msys2-autoconf2.72-2.72-3-any.pkg.tar.zst
+-- Using cached msys2-automake1.16-1.16.5-1-any.pkg.tar.zst
+-- Using cached msys2-automake1.17-1.17-1-any.pkg.tar.zst
+-- Using cached msys2-libiconv-1.18-1-x86_64.pkg.tar.zst
+-- Using cached msys2-libintl-0.22.5-1-x86_64.pkg.tar.zst
+-- Using cached msys2-zlib-1.3.1-1-x86_64.pkg.tar.zst
+-- Using cached msys2-findutils-4.10.0-2-x86_64.pkg.tar.zst
+-- Using cached msys2-tar-1.35-2-x86_64.pkg.tar.zst
+-- Using cached msys2-gmp-6.3.0-1-x86_64.pkg.tar.zst
+-- Using cached msys2-gcc-libs-13.3.0-1-x86_64.pkg.tar.zst
+-- Using cached msys2-libbz2-1.0.8-4-x86_64.pkg.tar.zst
+-- Using cached msys2-liblzma-5.8.1-1-x86_64.pkg.tar.zst
+-- Using cached msys2-libzstd-1.5.7-1-x86_64.pkg.tar.zst
+-- Using cached msys2-libreadline-8.2.013-1-x86_64.pkg.tar.zst
+-- Using cached msys2-mpfr-4.2.2-1-x86_64.pkg.tar.zst
+-- Using cached msys2-libpcre-8.45-5-x86_64.pkg.tar.zst
+-- Using cached msys2-m4-1.4.19-2-x86_64.pkg.tar.zst
+-- Using cached msys2-perl-5.38.4-2-x86_64.pkg.tar.zst
+-- Using cached msys2-ncurses-6.5.20240831-2-x86_64.pkg.tar.zst
+-- Using cached msys2-libxcrypt-4.4.38-1-x86_64.pkg.tar.zst
+-- Using msys root at C:/dev/vcpkg/downloads/tools/msys2/8392cd453c24d30d
+-- Building/Installing x64-windows-dbg
+-- Making target 'all' for x64-windows-dbg
+-- Making target 'install' for x64-windows-dbg
+-- Building/Installing x64-windows-rel
+-- Making target 'all' for x64-windows-rel
+-- Making target 'install' for x64-windows-rel
+-- Installing: C:/dev/vcpkg/packages/icu_x64-windows/tools/icu/config/icucross.inc
+-- Installing: C:/dev/vcpkg/packages/icu_x64-windows/tools/icu/config/icucross.mk
+CMake Warning at scripts/cmake/vcpkg_copy_pdbs.cmake:44 (message):
+  Could not find a matching pdb file for:
+
+      C:/dev/vcpkg/packages/icu_x64-windows/bin/icudt74.dll
+      C:/dev/vcpkg/packages/icu_x64-windows/debug/bin/icudtd74.dll
+
+Call Stack (most recent call first):
+  buildtrees/versioning_/versions/icu/ebd75351b43b485143b74a866381afafcd28b77b/portfile.cmake:140 (vcpkg_copy_pdbs)
+  scripts/ports.cmake:206 (include)
+
+
+-- Fixing pkgconfig file: C:/dev/vcpkg/packages/icu_x64-windows/lib/pkgconfig/icu-i18n.pc
+-- Fixing pkgconfig file: C:/dev/vcpkg/packages/icu_x64-windows/lib/pkgconfig/icu-io.pc
+-- Fixing pkgconfig file: C:/dev/vcpkg/packages/icu_x64-windows/lib/pkgconfig/icu-uc.pc
+-- Fixing pkgconfig file: C:/dev/vcpkg/packages/icu_x64-windows/debug/lib/pkgconfig/icu-i18n.pc
+-- Fixing pkgconfig file: C:/dev/vcpkg/packages/icu_x64-windows/debug/lib/pkgconfig/icu-io.pc
+-- Fixing pkgconfig file: C:/dev/vcpkg/packages/icu_x64-windows/debug/lib/pkgconfig/icu-uc.pc
+-- Installing: C:/dev/vcpkg/packages/icu_x64-windows/share/icu/copyright
+-- Performing post-build validation
+Starting submission of icu[core,tools]:x64-windows@74.2#6 to 1 binary cache(s) in the background
+Elapsed time to handle icu:x64-windows: 4.2 min
+icu:x64-windows package ABI: b8f8ba098ab14e0a9e66d71a56823fbd6b1549a06a4eec19e5639eb507fd9167
+Completed submission of libjpeg-turbo:x64-windows@3.1.2 to 1 binary cache(s) in 242 ms
+Installing 27/35 bzip2[core,tool]:x64-windows@1.0.8#6...
+Building bzip2[core,tool]:x64-windows@1.0.8#6...
+Downloading bzip2-1.0.8.tar.gz, trying https://sourceware.org/pub/bzip2/bzip2-1.0.8.tar.gz
+Successfully downloaded bzip2-1.0.8.tar.gz
+-- Extracting source C:/dev/vcpkg/downloads/bzip2-1.0.8.tar.gz
+-- Applying patch fix-import-export-macros.patch
+-- Using source at C:/dev/vcpkg/buildtrees/bzip2/src/bzip2-1-336d4794a3.clean
+-- Configuring x64-windows
+-- Building x64-windows-dbg
+-- Building x64-windows-rel
+-- Fixing pkgconfig file: C:/dev/vcpkg/packages/bzip2_x64-windows/lib/pkgconfig/bzip2.pc
+-- Using cached msys2-mingw-w64-x86_64-pkgconf-1~2.4.3-1-any.pkg.tar.zst
+-- Using cached msys2-msys2-runtime-3.6.2-2-x86_64.pkg.tar.zst
+-- Using msys root at C:/dev/vcpkg/downloads/tools/msys2/9272adbcaf19caef
+-- Fixing pkgconfig file: C:/dev/vcpkg/packages/bzip2_x64-windows/debug/lib/pkgconfig/bzip2.pc
+-- Installing: C:/dev/vcpkg/packages/bzip2_x64-windows/share/bzip2/copyright
+-- Performing post-build validation
+Starting submission of bzip2[core,tool]:x64-windows@1.0.8#6 to 1 binary cache(s) in the background
+Elapsed time to handle bzip2:x64-windows: 5.6 s
+bzip2:x64-windows package ABI: 13e6fbee2921175a5dd09eaaa7354f95df8dc704e11ea64be87470021a393c20
+Completed submission of icu[core,tools]:x64-windows@74.2#6 to 1 binary cache(s) in 3.1 s
+Installing 28/35 brotli:x64-windows@1.1.0#1...
+Building brotli:x64-windows@1.1.0#1...
+Downloading https://github.com/google/brotli/archive/v1.1.0.tar.gz -> google-brotli-v1.1.0.tar.gz
+Successfully downloaded google-brotli-v1.1.0.tar.gz
+-- Extracting source C:/dev/vcpkg/downloads/google-brotli-v1.1.0.tar.gz
+-- Applying patch install.patch
+-- Applying patch fix-arm-uwp.patch
+-- Applying patch pkgconfig.patch
+-- Applying patch emscripten.patch
+-- Using source at C:/dev/vcpkg/buildtrees/brotli/src/v1.1.0-958bece74c.clean
+-- Configuring x64-windows
+-- Building x64-windows-dbg
+-- Building x64-windows-rel
+-- Fixing pkgconfig file: C:/dev/vcpkg/packages/brotli_x64-windows/lib/pkgconfig/libbrotlicommon.pc
+-- Fixing pkgconfig file: C:/dev/vcpkg/packages/brotli_x64-windows/lib/pkgconfig/libbrotlidec.pc
+-- Fixing pkgconfig file: C:/dev/vcpkg/packages/brotli_x64-windows/lib/pkgconfig/libbrotlienc.pc
+-- Using cached msys2-mingw-w64-x86_64-pkgconf-1~2.4.3-1-any.pkg.tar.zst
+-- Using cached msys2-msys2-runtime-3.6.2-2-x86_64.pkg.tar.zst
+-- Using msys root at C:/dev/vcpkg/downloads/tools/msys2/9272adbcaf19caef
+-- Fixing pkgconfig file: C:/dev/vcpkg/packages/brotli_x64-windows/debug/lib/pkgconfig/libbrotlicommon.pc
+-- Fixing pkgconfig file: C:/dev/vcpkg/packages/brotli_x64-windows/debug/lib/pkgconfig/libbrotlidec.pc
+-- Fixing pkgconfig file: C:/dev/vcpkg/packages/brotli_x64-windows/debug/lib/pkgconfig/libbrotlienc.pc
+-- Installing: C:/dev/vcpkg/packages/brotli_x64-windows/share/brotli/usage
+-- Installing: C:/dev/vcpkg/packages/brotli_x64-windows/share/brotli/copyright
+-- Performing post-build validation
+Starting submission of brotli:x64-windows@1.1.0#1 to 1 binary cache(s) in the background
+Elapsed time to handle brotli:x64-windows: 7.6 s
+brotli:x64-windows package ABI: 22bc4ebf2cb765e84f737447824a0be2b485883be581ba10557619c620ff6288
+Completed submission of bzip2[core,tool]:x64-windows@1.0.8#6 to 1 binary cache(s) in 75.7 ms
+Installing 29/35 freetype[brotli,bzip2,core,png,zlib]:x64-windows@2.13.3...
+Building freetype[brotli,bzip2,core,png,zlib]:x64-windows@2.13.3...
+Downloading https://gitlab.freedesktop.org//freetype/freetype/-/archive/VER-2-13-3/freetype-VER-2-13-3.tar.gz -> freetype-freetype-VER-2-13-3.tar.gz
+Successfully downloaded freetype-freetype-VER-2-13-3.tar.gz
+-- Extracting source C:/dev/vcpkg/downloads/freetype-freetype-VER-2-13-3.tar.gz
+-- Applying patch 0003-Fix-UWP.patch
+-- Applying patch brotli-static.patch
+-- Applying patch bzip2.patch
+-- Applying patch fix-exports.patch
+-- Using source at C:/dev/vcpkg/buildtrees/freetype/src/VER-2-13-3-8b423a038b.clean
+-- Configuring x64-windows
+-- Building x64-windows-dbg
+-- Building x64-windows-rel
+-- Fixing pkgconfig file: C:/dev/vcpkg/packages/freetype_x64-windows/lib/pkgconfig/freetype2.pc
+-- Using cached msys2-mingw-w64-x86_64-pkgconf-1~2.4.3-1-any.pkg.tar.zst
+-- Using cached msys2-msys2-runtime-3.6.2-2-x86_64.pkg.tar.zst
+-- Using msys root at C:/dev/vcpkg/downloads/tools/msys2/9272adbcaf19caef
+-- Fixing pkgconfig file: C:/dev/vcpkg/packages/freetype_x64-windows/debug/lib/pkgconfig/freetype2.pc
+-- Installing: C:/dev/vcpkg/packages/freetype_x64-windows/share/freetype/usage
+-- Performing post-build validation
+Starting submission of freetype[brotli,bzip2,core,png,zlib]:x64-windows@2.13.3 to 1 binary cache(s) in the background
+Elapsed time to handle freetype:x64-windows: 9.7 s
+freetype:x64-windows package ABI: 7692e539c29752659412391358aeb9f028743bedaf15b2ee91c9bc42dbe29d43
+Completed submission of brotli:x64-windows@1.1.0#1 to 1 binary cache(s) in 296 ms
+Installing 30/35 harfbuzz[core,freetype]:x64-windows@11.3.3...
+Building harfbuzz[core,freetype]:x64-windows@11.3.3...
+-- Found Python version '3.12.7 at C:/dev/vcpkg/downloads/tools/python/python-3.12.7-x64-1/python.exe'
+-- Using meson: C:/dev/vcpkg/downloads/tools/meson-1.9.0-d1fcc2/meson.py
+Downloading https://github.com/harfbuzz/harfbuzz/archive/11.3.3.tar.gz -> harfbuzz-harfbuzz-11.3.3.tar.gz
+Successfully downloaded harfbuzz-harfbuzz-11.3.3.tar.gz
+-- Extracting source C:/dev/vcpkg/downloads/harfbuzz-harfbuzz-11.3.3.tar.gz
+-- Applying patch fix-win32-build.patch
+-- Applying patch add-parameter-name.patch
+-- Using source at C:/dev/vcpkg/buildtrees/harfbuzz/src/11.3.3-815fa88617.clean
+-- Using cached msys2-mingw-w64-x86_64-pkgconf-1~2.4.3-1-any.pkg.tar.zst
+-- Using cached msys2-msys2-runtime-3.6.2-2-x86_64.pkg.tar.zst
+-- Using msys root at C:/dev/vcpkg/downloads/tools/msys2/9272adbcaf19caef
+-- Configuring x64-windows-dbg
+-- Getting CMake variables for x64-windows
+-- Loading CMake variables from C:/dev/vcpkg/buildtrees/harfbuzz/cmake-get-vars_C_CXX-x64-windows.cmake.log
+-- Configuring x64-windows-dbg done
+-- Configuring x64-windows-rel
+-- Configuring x64-windows-rel done
+-- Package x64-windows-dbg
+-- Package x64-windows-rel
+-- Fixing pkgconfig file: C:/dev/vcpkg/packages/harfbuzz_x64-windows/lib/pkgconfig/harfbuzz-subset.pc
+-- Fixing pkgconfig file: C:/dev/vcpkg/packages/harfbuzz_x64-windows/lib/pkgconfig/harfbuzz.pc
+-- Fixing pkgconfig file: C:/dev/vcpkg/packages/harfbuzz_x64-windows/debug/lib/pkgconfig/harfbuzz-subset.pc
+-- Fixing pkgconfig file: C:/dev/vcpkg/packages/harfbuzz_x64-windows/debug/lib/pkgconfig/harfbuzz.pc
+-- Installing: C:/dev/vcpkg/packages/harfbuzz_x64-windows/share/harfbuzz/copyright
+-- Installing: C:/dev/vcpkg/packages/harfbuzz_x64-windows/share/harfbuzz/usage
+-- Performing post-build validation
+Starting submission of harfbuzz[core,freetype]:x64-windows@11.3.3 to 1 binary cache(s) in the background
+Elapsed time to handle harfbuzz:x64-windows: 1.6 min
+harfbuzz:x64-windows package ABI: a18b4b058e051ad58d8860c5bf405f2409a492212713686285f6f7ffdbcdbf84
+Completed submission of freetype[brotli,bzip2,core,png,zlib]:x64-windows@2.13.3 to 1 binary cache(s) in 274 ms
+Installing 31/35 double-conversion:x64-windows@3.3.1...
+Building double-conversion:x64-windows@3.3.1...
+Downloading https://github.com/google/double-conversion/archive/v3.3.1.tar.gz -> google-double-conversion-v3.3.1.tar.gz
+Successfully downloaded google-double-conversion-v3.3.1.tar.gz
+-- Extracting source C:/dev/vcpkg/downloads/google-double-conversion-v3.3.1.tar.gz
+-- Using source at C:/dev/vcpkg/buildtrees/double-conversion/src/v3.3.1-d69b58b5e2.clean
+-- Configuring x64-windows
+-- Building x64-windows-dbg
+-- Building x64-windows-rel
+-- Installing: C:/dev/vcpkg/packages/double-conversion_x64-windows/share/double-conversion/copyright
+-- Performing post-build validation
+Starting submission of double-conversion:x64-windows@3.3.1 to 1 binary cache(s) in the background
+Elapsed time to handle double-conversion:x64-windows: 5.7 s
+double-conversion:x64-windows package ABI: 8c54cf7467e53d6b2db171db0b3fdcfd41992d3e90f380410483f5e0ea771ddd
+Completed submission of harfbuzz[core,freetype]:x64-windows@11.3.3 to 1 binary cache(s) in 2 s
+Installing 32/35 expat:x64-windows@2.7.3...
+Building expat:x64-windows@2.7.3...
+Downloading https://github.com/libexpat/libexpat/archive/R_2_7_3.tar.gz -> libexpat-libexpat-R_2_7_3.tar.gz
+Successfully downloaded libexpat-libexpat-R_2_7_3.tar.gz
+-- Extracting source C:/dev/vcpkg/downloads/libexpat-libexpat-R_2_7_3.tar.gz
+-- Using source at C:/dev/vcpkg/buildtrees/expat/src/R_2_7_3-c331528ffe.clean
+-- Configuring x64-windows
+-- Building x64-windows-dbg
+-- Building x64-windows-rel
+-- Fixing pkgconfig file: C:/dev/vcpkg/packages/expat_x64-windows/lib/pkgconfig/expat.pc
+-- Using cached msys2-mingw-w64-x86_64-pkgconf-1~2.4.3-1-any.pkg.tar.zst
+-- Using cached msys2-msys2-runtime-3.6.2-2-x86_64.pkg.tar.zst
+-- Using msys root at C:/dev/vcpkg/downloads/tools/msys2/9272adbcaf19caef
+-- Fixing pkgconfig file: C:/dev/vcpkg/packages/expat_x64-windows/debug/lib/pkgconfig/expat.pc
+-- Installing: C:/dev/vcpkg/packages/expat_x64-windows/share/expat/copyright
+-- Performing post-build validation
+Starting submission of expat:x64-windows@2.7.3 to 1 binary cache(s) in the background
+Elapsed time to handle expat:x64-windows: 9.4 s
+expat:x64-windows package ABI: f38bdd37dfa9eec1501efb661b758e9e1ebed593902d776b76fb99c5304155ec
+Completed submission of double-conversion:x64-windows@3.3.1 to 1 binary cache(s) in 191 ms
+Installing 33/35 dbus:x64-windows@1.16.2#2...
+Building dbus:x64-windows@1.16.2#2...
+Downloading https://gitlab.freedesktop.org//dbus/dbus/-/archive/dbus-1.16.2/dbus-dbus-1.16.2.tar.gz -> dbus-dbus-dbus-1.16.2.tar.gz
+Successfully downloaded dbus-dbus-dbus-1.16.2.tar.gz
+-- Extracting source C:/dev/vcpkg/downloads/dbus-dbus-dbus-1.16.2.tar.gz
+-- Applying patch cmake.dep.patch
+-- Applying patch pkgconfig.patch
+-- Applying patch getpeereid.patch
+-- Applying patch libsystemd.patch
+-- Applying patch remove-path.patch
+-- Applying patch remove-var-lib-dbus-creation.patch
+-- Using source at C:/dev/vcpkg/buildtrees/dbus/src/bus-1.16.2-02a7b61930.clean
+-- Configuring x64-windows
+-- Building x64-windows-dbg
+-- Building x64-windows-rel
+-- Fixing pkgconfig file: C:/dev/vcpkg/packages/dbus_x64-windows/lib/pkgconfig/dbus-1.pc
+-- Using cached msys2-mingw-w64-x86_64-pkgconf-1~2.4.3-1-any.pkg.tar.zst
+-- Using cached msys2-msys2-runtime-3.6.2-2-x86_64.pkg.tar.zst
+-- Using msys root at C:/dev/vcpkg/downloads/tools/msys2/9272adbcaf19caef
+-- Fixing pkgconfig file: C:/dev/vcpkg/packages/dbus_x64-windows/debug/lib/pkgconfig/dbus-1.pc
+-- Installing: C:/dev/vcpkg/packages/dbus_x64-windows/share/dbus/copyright
+-- Performing post-build validation
+Starting submission of dbus:x64-windows@1.16.2#2 to 1 binary cache(s) in the background
+Elapsed time to handle dbus:x64-windows: 48 s
+dbus:x64-windows package ABI: c30365b66068629cf5585f750cf9120dc0ed017668454c11767a88b33fb9f182
+Completed submission of expat:x64-windows@2.7.3 to 1 binary cache(s) in 115 ms
+Installing 34/35 qtbase[brotli,concurrent,core,dbus,dnslookup,doubleconversion,freetype,gui,harfbuzz,icu,jpeg,network,opengl,openssl,pcre2,png,sql,sql-psql,sql-sqlite,testlib,thread,widgets,zstd]:x64-windows@6.9.1#1...
+Building qtbase[brotli,concurrent,core,dbus,dnslookup,doubleconversion,freetype,gui,harfbuzz,icu,jpeg,network,opengl,openssl,pcre2,png,sql,sql-psql,sql-sqlite,testlib,thread,widgets,zstd]:x64-windows@6.9.1#1...
+-- Using cached msys2-mingw-w64-x86_64-pkgconf-1~2.4.3-1-any.pkg.tar.zst
+-- Using cached msys2-msys2-runtime-3.6.2-2-x86_64.pkg.tar.zst
+-- Using msys root at C:/dev/vcpkg/downloads/tools/msys2/9272adbcaf19caef
+Downloading qtbase-everywhere-src-6.9.1.tar.xz, trying https://download.qt.io/archive/qt/6.9/6.9.1/submodules/qtbase-everywhere-src-6.9.1.tar.xz
+Successfully downloaded qtbase-everywhere-src-6.9.1.tar.xz
+-- Extracting source C:/dev/vcpkg/downloads/qtbase-everywhere-src-6.9.1.tar.xz
+-- Applying patch allow_outside_prefix.patch
+-- Applying patch config_install.patch
+-- Applying patch fix_cmake_build.patch
+-- Applying patch harfbuzz.patch
+-- Applying patch fix_egl.patch
+-- Applying patch fix_egl_2.patch
+-- Applying patch installed_dir.patch
+-- Applying patch GLIB2-static.patch
+-- Applying patch clang-cl_source_location.patch
+-- Applying patch clang-cl_QGADGET_fix.diff
+-- Applying patch fix-host-aliasing.patch
+-- Applying patch fix_deploy_windows.patch
+-- Applying patch fix-link-lib-discovery.patch
+-- Applying patch macdeployqt-symlinks.patch
+-- Applying patch fix-missing-include.patch
+-- Applying patch moltenvk.patch
+-- Applying patch xcodebuild-not-installed.patch
+-- Applying patch fix-libresolv-test.patch
+-- Applying patch env.patch
+-- Applying patch dont_force_cmakecache_latest.patch
+-- Using source at C:/dev/vcpkg/buildtrees/qtbase/src/here-src-6-103ebd12e9.clean
+-- Configuring x64-windows
+-- Building x64-windows-dbg
+-- Building x64-windows-rel
+-- Installing: C:/dev/vcpkg/packages/qtbase_x64-windows/tools/Qt6/bin/qmake.debug.bat
+-- Installing: C:/dev/vcpkg/packages/qtbase_x64-windows/tools/Qt6/bin/qtpaths.debug.bat
+-- Installing: C:/dev/vcpkg/packages/qtbase_x64-windows/tools/Qt6/bin/windeployqt.debug.bat
+-- Performing post-build validation
+Starting submission of qtbase[brotli,concurrent,core,dbus,dnslookup,doubleconversion,freetype,gui,harfbuzz,icu,jpeg,network,opengl,openssl,pcre2,png,sql,sql-psql,sql-sqlite,testlib,thread,widgets,zstd]:x64-windows@6.9.1#1 to 1 binary cache(s) in the background
+Elapsed time to handle qtbase:x64-windows: 16 min
+qtbase:x64-windows package ABI: 74e905a82e081d928775f04861b903211dbfd71bed69b99f860a5177464c04cc
+Completed submission of dbus:x64-windows@1.16.2#2 to 1 binary cache(s) in 279 ms
+Installing 35/35 spdlog:x64-windows@1.16.0...
+Building spdlog:x64-windows@1.16.0...
+Downloading https://github.com/gabime/spdlog/archive/v1.16.0.tar.gz -> gabime-spdlog-v1.16.0.tar.gz
+Successfully downloaded gabime-spdlog-v1.16.0.tar.gz
+-- Extracting source C:/dev/vcpkg/downloads/gabime-spdlog-v1.16.0.tar.gz
+-- Using source at C:/dev/vcpkg/buildtrees/spdlog/src/v1.16.0-e349c3b9b7.clean
+-- Configuring x64-windows
+-- Building x64-windows-dbg
+-- Building x64-windows-rel
+-- Fixing pkgconfig file: C:/dev/vcpkg/packages/spdlog_x64-windows/lib/pkgconfig/spdlog.pc
+-- Using cached msys2-mingw-w64-x86_64-pkgconf-1~2.4.3-1-any.pkg.tar.zst
+-- Using cached msys2-msys2-runtime-3.6.2-2-x86_64.pkg.tar.zst
+-- Using msys root at C:/dev/vcpkg/downloads/tools/msys2/9272adbcaf19caef
+-- Fixing pkgconfig file: C:/dev/vcpkg/packages/spdlog_x64-windows/debug/lib/pkgconfig/spdlog.pc
+-- Installing: C:/dev/vcpkg/packages/spdlog_x64-windows/share/spdlog/usage
+-- Installing: C:/dev/vcpkg/packages/spdlog_x64-windows/share/spdlog/copyright
+-- Performing post-build validation
+Starting submission of spdlog:x64-windows@1.16.0 to 1 binary cache(s) in the background
+Elapsed time to handle spdlog:x64-windows: 17 s
+spdlog:x64-windows package ABI: 15a0f7e0f6491cc2a9fdb5afc03beba7a96a9ea1c2f5d5d9a4b052a58a521549
+Installed contents are licensed to you by owners. Microsoft is not responsible for, nor does it grant any licenses to, third-party packages.
+Some packages did not declare an SPDX license. Check the `copyright` file for each package for more information about their licensing.
+Packages installed in this vcpkg installation declare the following licenses:
+(AFL-2.1 OR GPL-2.0-or-later)
+(BSD-3-Clause OR GPL-2.0-only)
+(FTL OR GPL-2.0-or-later)
+Apache-2.0
+BSD-2-Clause
+BSD-3-Clause
+GPL-3.0-only
+ICU
+ISC
+LGPL-2.1-or-later
+MIT
+MIT-Modern-Variant
+PostgreSQL
+Zlib
+blessing
+bzip2-1.0.6
+curl
+libpng-2.0
+curl is compatible with built-in CMake targets:
+
+    find_package(CURL REQUIRED)
+    target_link_libraries(main PRIVATE CURL::libcurl)
+
+The package fmt provides CMake targets:
+
+    find_package(fmt CONFIG REQUIRED)
+    target_link_libraries(main PRIVATE fmt::fmt)
+
+    # Or use the header-only version
+    find_package(fmt CONFIG REQUIRED)
+    target_link_libraries(main PRIVATE fmt::fmt-header-only)
+
+jsoncpp provides CMake targets:
+
+  # this is heuristically generated, and may not be correct
+  find_package(jsoncpp CONFIG REQUIRED)
+  target_link_libraries(main PRIVATE JsonCpp::JsonCpp)
+
+jsoncpp provides pkg-config modules:
+
+  # A C++ library for interacting with JSON
+  jsoncpp
+
+openssl is compatible with built-in CMake targets:
+
+  find_package(OpenSSL REQUIRED)
+  target_link_libraries(main PRIVATE OpenSSL::SSL)
+  target_link_libraries(main PRIVATE OpenSSL::Crypto)
+
+sqlite3 provides pkgconfig bindings.
+sqlite3 provides CMake targets:
+
+    find_package(unofficial-sqlite3 CONFIG REQUIRED)
+    target_link_libraries(main PRIVATE unofficial::sqlite3::sqlite3)
+
+qtbase provides CMake targets:
+
+  # this is heuristically generated, and may not be correct
+  find_package(Qt6 CONFIG REQUIRED)
+  # note: 37 additional targets are not displayed.
+  target_link_libraries(main PRIVATE DB2::DB2 PPS::PPS Oracle::OCI Libb2::Libb2)
+
+  find_package(Qt6Concurrent CONFIG REQUIRED)
+  target_link_libraries(main PRIVATE Qt6::Concurrent)
+
+  find_package(Qt6ConcurrentPrivate CONFIG REQUIRED)
+  target_link_libraries(main PRIVATE Qt6::ConcurrentPrivate)
+
+  find_package(Qt6Core CONFIG REQUIRED)
+  target_link_libraries(main PRIVATE Qt6::Core)
+
+  find_package(Qt6CorePrivate CONFIG REQUIRED)
+  target_link_libraries(main PRIVATE Qt6::CorePrivate)
+
+  find_package(Qt6DBus CONFIG REQUIRED)
+  target_link_libraries(main PRIVATE Qt6::DBus)
+
+  find_package(Qt6DBusPrivate CONFIG REQUIRED)
+  target_link_libraries(main PRIVATE Qt6::DBusPrivate)
+
+  find_package(Qt6DeviceDiscoverySupportPrivate CONFIG REQUIRED)
+  target_link_libraries(main PRIVATE Qt6::DeviceDiscoverySupportPrivate)
+
+  find_package(Qt6EntryPointPrivate CONFIG REQUIRED)
+  target_link_libraries(main PRIVATE Qt6::EntryPointPrivate Qt6::EntryPointImplementation)
+
+  find_package(Qt6ExampleIconsPrivate CONFIG REQUIRED)
+  target_link_libraries(main PRIVATE Qt6::ExampleIconsPrivate Qt6::ExampleIconsPrivate_resources_1)
+
+  find_package(Qt6ExamplesAssetDownloaderPrivate CONFIG REQUIRED)
+  target_link_libraries(main PRIVATE Qt6::ExamplesAssetDownloaderPrivate)
+
+  find_package(Qt6FbSupportPrivate CONFIG REQUIRED)
+  target_link_libraries(main PRIVATE Qt6::FbSupportPrivate)
+
+  find_package(Qt6Gui CONFIG REQUIRED)
+  # note: 5 additional targets are not displayed.
+  target_link_libraries(main PRIVATE Qt6::Gui Qt6::QGifPlugin Qt6::QICOPlugin Qt6::QJpegPlugin)
+
+  find_package(Qt6GuiPrivate CONFIG REQUIRED)
+  target_link_libraries(main PRIVATE Qt6::GuiPrivate)
+
+  find_package(Qt6Network CONFIG REQUIRED)
+  # note: 1 additional targets are not displayed.
+  target_link_libraries(main PRIVATE Qt6::Network Qt6::QNLMNIPlugin Qt6::QSchannelBackendPlugin Qt6::QTlsBackendOpenSSLPlugin)
+
+  find_package(Qt6NetworkPrivate CONFIG REQUIRED)
+  target_link_libraries(main PRIVATE Qt6::NetworkPrivate)
+
+  find_package(Qt6OpenGL CONFIG REQUIRED)
+  target_link_libraries(main PRIVATE Qt6::OpenGL)
+
+  find_package(Qt6OpenGLPrivate CONFIG REQUIRED)
+  target_link_libraries(main PRIVATE Qt6::OpenGLPrivate)
+
+  find_package(Qt6OpenGLWidgets CONFIG REQUIRED)
+  target_link_libraries(main PRIVATE Qt6::OpenGLWidgets)
+
+  find_package(Qt6OpenGLWidgetsPrivate CONFIG REQUIRED)
+  target_link_libraries(main PRIVATE Qt6::OpenGLWidgetsPrivate)
+
+  find_package(Qt6PrintSupport CONFIG REQUIRED)
+  target_link_libraries(main PRIVATE Qt6::PrintSupport)
+
+  find_package(Qt6PrintSupportPrivate CONFIG REQUIRED)
+  target_link_libraries(main PRIVATE Qt6::PrintSupportPrivate)
+
+  find_package(Qt6Sql CONFIG REQUIRED)
+  target_link_libraries(main PRIVATE Qt6::Sql Qt6::QPSQLDriverPlugin Qt6::QSQLiteDriverPlugin)
+
+  find_package(Qt6SqlPrivate CONFIG REQUIRED)
+  target_link_libraries(main PRIVATE Qt6::SqlPrivate)
+
+  find_package(Qt6Test CONFIG REQUIRED)
+  target_link_libraries(main PRIVATE Qt6::Test)
+
+  find_package(Qt6TestInternalsPrivate CONFIG REQUIRED)
+  target_link_libraries(main PRIVATE Qt6::TestInternalsPrivate)
+
+  find_package(Qt6TestPrivate CONFIG REQUIRED)
+  target_link_libraries(main PRIVATE Qt6::TestPrivate)
+
+  find_package(Qt6Widgets CONFIG REQUIRED)
+  target_link_libraries(main PRIVATE Qt6::Widgets Qt6::QModernWindowsStylePlugin)
+
+  find_package(Qt6WidgetsPrivate CONFIG REQUIRED)
+  target_link_libraries(main PRIVATE Qt6::WidgetsPrivate)
+
+  find_package(Qt6Xml CONFIG REQUIRED)
+  target_link_libraries(main PRIVATE Qt6::Xml)
+
+  find_package(Qt6XmlPrivate CONFIG REQUIRED)
+  target_link_libraries(main PRIVATE Qt6::XmlPrivate)
+
+The package spdlog provides CMake targets:
+
+    find_package(spdlog CONFIG REQUIRED)
+    target_link_libraries(main PRIVATE spdlog::spdlog)
+
+    # Or use the header-only version
+    find_package(spdlog CONFIG REQUIRED)
+    target_link_libraries(main PRIVATE spdlog::spdlog_header_only)
+
+Waiting for 2 remaining binary cache submissions...
+Completed submission of qtbase[brotli,concurrent,core,dbus,dnslookup,doubleconversion,freetype,gui,harfbuzz,icu,jpeg,network,opengl,openssl,pcre2,png,sql,sql-psql,sql-sqlite,testlib,thread,widgets,zstd]:x64-windows@6.9.1#1 to 1 binary cache(s) in 27 s (1/2)
+Completed submission of spdlog:x64-windows@1.16.0 to 1 binary cache(s) in 820 ms (2/2)
+All requested installations completed successfully in: 38 min
+-- Running vcpkg install - done
+-- The CXX compiler identification is MSVC 19.44.35219.0
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.44.35207/bin/Hostx64/x64/cl.exe - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Failed
+-- Looking for pthread_create in pthreads
+-- Looking for pthread_create in pthreads - not found
+-- Looking for pthread_create in pthread
+-- Looking for pthread_create in pthread - not found
+-- Found Threads: TRUE
+-- Performing Test HAVE_STDATOMIC
+-- Performing Test HAVE_STDATOMIC - Success
+-- Found WrapAtomic: TRUE
+-- Found ZLIB: optimized;D:/VSProj/ai-file-sorter/app/build-windows/vcpkg_installed/x64-windows/lib/zlib.lib;debug;D:/VSProj/ai-file-sorter/app/build-windows/vcpkg_installed/x64-windows/debug/lib/zlibd.lib (found suitable version "1.3.1", minimum required is "1")
+-- Found OpenSSL: optimized;D:/VSProj/ai-file-sorter/app/build-windows/vcpkg_installed/x64-windows/lib/libcrypto.lib;debug;D:/VSProj/ai-file-sorter/app/build-windows/vcpkg_installed/x64-windows/debug/lib/libcrypto.lib (found version "3.6.0")
+-- Found SQLite3: D:/VSProj/ai-file-sorter/app/build-windows/vcpkg_installed/x64-windows/include (found version "3.50.4")
+-- Found Intl: D:/VSProj/ai-file-sorter/app/build-windows/vcpkg_installed/x64-windows/debug/lib/intl.lib (found version "0.22.5")
+-- Found Iconv: D:/VSProj/ai-file-sorter/app/build-windows/vcpkg_installed/x64-windows/debug/lib/iconv.lib (found version "1.18")
+-- Configuring done (2274.1s)
+-- Generating done (0.3s)
+-- Build files have been written to: D:/VSProj/ai-file-sorter/app/build-windows
+Building...
+MSBuild version 17.14.23+b0019275e for .NET Framework
+
+  1>Checking Build System
+  Generating Windows icon
+  Building Custom Rule D:/VSProj/ai-file-sorter/app/CMakeLists.txt
+  Building Custom Rule D:/VSProj/ai-file-sorter/app/CMakeLists.txt
+  startapp_windows.cpp
+  StartAiFileSorter.vcxproj -> D:\VSProj\ai-file-sorter\app\build-windows\Release\StartAiFileSorter.exe
+  Running rcc for resource app_resources
+  Building Custom Rule D:/VSProj/ai-file-sorter/app/CMakeLists.txt
+  CategorizationDialog.cpp
+  CategorizationProgressDialog.cpp
+  CategorizationSession.cpp
+  CryptoManager.cpp
+  DatabaseManager.cpp
+  DialogUtils.cpp
+  EmbeddedEnv.cpp
+  FileScanner.cpp
+  IniConfig.cpp
+  LLMClient.cpp
+  LLMDownloader.cpp
+  LLMSelectionDialog.cpp
+  LocalLLMClient.cpp
+  Logger.cpp
+  MainApp.cpp
+  MainAppEditActions.cpp
+  MainAppHelpActions.cpp
+  MovableCategorizedFile.cpp
+  Settings.cpp
+  TranslationManager.cpp
+  Generating Code...
+  Compiling...
+  Updater.cpp
+  Utils.cpp
+  Version.cpp
+  main.cpp
+  qrc_app_resources.cpp
+  Generating Code...
+  aifilesorter.vcxproj -> D:\VSProj\ai-file-sorter\app\build-windows\Release\aifilesorter.exe
+  Error copying directory from "D:/VSProj/ai-file-sorter/app/lib/precompiled/cuda" to "D:/VSProj/ai-file-sorter/app/build-windows/Release/lib/ggml/wcuda".
+C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppCommon.targets(166,5): error MSB3073: The command "setlocal [D:\VSProj\ai-file-sorter\app\build-windows\aifilesorter.vcxproj]
+C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppCommon.targets(166,5): error MSB3073: "C:\Program Files\PowerShell\7\pwsh.exe" -noprofile -executionpolicy Bypass -file C:/dev/vcpkg/scripts/buildsystems/msbuild/applocal.ps1 -targetBinary D:/VSProj/ai-file-sorter/app/build-windows/Release/aifilesorter.exe -installedDir D:/VSProj/ai-file-sorter/app/build-windows/vcpkg_installed/x64-windows/bin -OutVariable out [D:\VSProj\ai-file-sorter\app\build-windows\aifilesorter.vcxproj]
+C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppCommon.targets(166,5): error MSB3073: if %errorlevel% neq 0 goto :cmEnd [D:\VSProj\ai-file-sorter\app\build-windows\aifilesorter.vcxproj]
+C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppCommon.targets(166,5): error MSB3073: :cmEnd [D:\VSProj\ai-file-sorter\app\build-windows\aifilesorter.vcxproj]
+C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppCommon.targets(166,5): error MSB3073: endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone [D:\VSProj\ai-file-sorter\app\build-windows\aifilesorter.vcxproj]
+C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppCommon.targets(166,5): error MSB3073: :cmErrorLevel [D:\VSProj\ai-file-sorter\app\build-windows\aifilesorter.vcxproj]
+C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppCommon.targets(166,5): error MSB3073: exit /b %1 [D:\VSProj\ai-file-sorter\app\build-windows\aifilesorter.vcxproj]
+C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppCommon.targets(166,5): error MSB3073: :cmDone [D:\VSProj\ai-file-sorter\app\build-windows\aifilesorter.vcxproj]
+C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppCommon.targets(166,5): error MSB3073: if %errorlevel% neq 0 goto :VCEnd [D:\VSProj\ai-file-sorter\app\build-windows\aifilesorter.vcxproj]
+C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppCommon.targets(166,5): error MSB3073: setlocal [D:\VSProj\ai-file-sorter\app\build-windows\aifilesorter.vcxproj]
+C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppCommon.targets(166,5): error MSB3073: "C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E make_directory D:/VSProj/ai-file-sorter/app/build-windows/Release/lib/ggml/wocuda [D:\VSProj\ai-file-sorter\app\build-windows\aifilesorter.vcxproj]
+C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppCommon.targets(166,5): error MSB3073: if %errorlevel% neq 0 goto :cmEnd [D:\VSProj\ai-file-sorter\app\build-windows\aifilesorter.vcxproj]
+C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppCommon.targets(166,5): error MSB3073: "C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E make_directory D:/VSProj/ai-file-sorter/app/build-windows/Release/lib/ggml/wcuda [D:\VSProj\ai-file-sorter\app\build-windows\aifilesorter.vcxproj]
+C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppCommon.targets(166,5): error MSB3073: if %errorlevel% neq 0 goto :cmEnd [D:\VSProj\ai-file-sorter\app\build-windows\aifilesorter.vcxproj]
+C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppCommon.targets(166,5): error MSB3073: "C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E copy_directory D:/VSProj/ai-file-sorter/app/lib/precompiled/cpu D:/VSProj/ai-file-sorter/app/build-windows/Release/lib/ggml/wocuda [D:\VSProj\ai-file-sorter\app\build-windows\aifilesorter.vcxproj]
+C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppCommon.targets(166,5): error MSB3073: if %errorlevel% neq 0 goto :cmEnd [D:\VSProj\ai-file-sorter\app\build-windows\aifilesorter.vcxproj]
+C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppCommon.targets(166,5): error MSB3073: "C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E copy_directory D:/VSProj/ai-file-sorter/app/lib/precompiled/cuda D:/VSProj/ai-file-sorter/app/build-windows/Release/lib/ggml/wcuda [D:\VSProj\ai-file-sorter\app\build-windows\aifilesorter.vcxproj]
+C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppCommon.targets(166,5): error MSB3073: if %errorlevel% neq 0 goto :cmEnd [D:\VSProj\ai-file-sorter\app\build-windows\aifilesorter.vcxproj]
+C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppCommon.targets(166,5): error MSB3073: :cmEnd [D:\VSProj\ai-file-sorter\app\build-windows\aifilesorter.vcxproj]
+C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppCommon.targets(166,5): error MSB3073: endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone [D:\VSProj\ai-file-sorter\app\build-windows\aifilesorter.vcxproj]
+C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppCommon.targets(166,5): error MSB3073: :cmErrorLevel [D:\VSProj\ai-file-sorter\app\build-windows\aifilesorter.vcxproj]
+C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppCommon.targets(166,5): error MSB3073: exit /b %1 [D:\VSProj\ai-file-sorter\app\build-windows\aifilesorter.vcxproj]
+C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppCommon.targets(166,5): error MSB3073: :cmDone [D:\VSProj\ai-file-sorter\app\build-windows\aifilesorter.vcxproj]
+C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppCommon.targets(166,5): error MSB3073: if %errorlevel% neq 0 goto :VCEnd [D:\VSProj\ai-file-sorter\app\build-windows\aifilesorter.vcxproj]
+C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppCommon.targets(166,5): error MSB3073: :VCEnd" exited with code 1. [D:\VSProj\ai-file-sorter\app\build-windows\aifilesorter.vcxproj]
+cmake build failed.
+At D:\VSProj\ai-file-sorter\app\build_windows.ps1:171 char:5
++     throw "cmake build failed."
++     ~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : OperationStopped: (cmake build failed.:String) [], Run 
+   timeException
+    + FullyQualifiedErrorId : cmake build failed.
+ 
